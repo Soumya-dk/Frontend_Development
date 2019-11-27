@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.body 
+  font-family: Roboto
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 40%;
+  border-radius: 30px;
+  border: none;
+  background-color: white;
+  margin-top: -8px;
+  height: 25px;
+  color: #666;
+  padding: 1px;
+}
+
+/* Three bars (hamburger menu) */
+.bar{
+  width: 17px;
+  height: 5px;
+  background-color: grey;
+  margin-bottom:  4px;
+  display: block;
+}
+
+/* Page content */
+
+
+
+a:link {
+  text-decoration: none;
+}
+
+.button {
+  padding: 3px 3px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color:#32BDD2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 1px #999;
+}
+
+
+
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+.container {
+  border: 1px solid #00000029;
+  box-shadow: 0px 0px 4px #00000029;
+  background-color: #FFFFFF;
+  width:100%;
+  height:60px;
+}
+.content{
+  padding:100px;
+  background-color:#FFFFFF;
+  width:100%;
+  border: 20px solid #F6F8F9 ;
+  box-shadow: 0px 0px 4px #00000029;
+}
+
+
+</style>
+</head>
+<body>
+
+  <table class="container">
+     <tr>
+    <td>
+      
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </td>
+ 
+    <td style="padding-left:75%;">    
+      <img src="../Images/avatar.jpg"width="30" height="30" style="border-radius:50%;">
+    <label>John Doe
+        <img src="../Images/drop.png" width="20" height="20">
+        </label>
+     </td>
+  </tr>
+  </table>
+<table class="content">
+  <tr>
+      <td>
+   <h3><b><u>My Request</u></b></h3>
+      </td>
+     
+          <td>
+               <span>  
+              <input type="text" placeholder="Search.." style="padding-left:20px; padding-right: 40px; border: 1px solid #B5B5B5;">
+            <img src="../Images/search.png"width="20" height="20">
+           </span>
+      </td>
+      <td><button class="button">New Request</button></td>
+     
+  </tr>      
+          
+              
+    <tr>
+        <td>
+            <p>
+               <img src="../Images/filter.png" width="30" height="30" style="color:#909090">FILTER<br>You have not applied any filter
+
+            </p>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>  
+      <tr>
+          <td><p><b>PUR-2019-056</b><br><br>Submitted on<br><b>06 Jul 2019</b></p></td>
+          
+          <td>  <span><img src="../Images/bell.png"width="60" height="60" style="padding-left:40px;"></span>
+           </td>
+          <td><p>AWAITING APPROVAL<span class="dot" style="background:#FFC60A;"></span></p></td>
+        </tr>
+        <tr>
+            <td><p><b>PUR-2019-056</b><br><br>Submitted on<br><b>06 Jul 2019</b></p></td>
+            <td>  <span><img src="../Images/bell.png"width="60" height="60"style="padding-left:40px;"></span>
+              
+             </td>
+            <td><p>APPROVED<span class="dot" style="background:#24D081;"></span></p></td>
+          </tr>
+           
+          <tr>
+              <td><p><b>PUR-2019-056</b><br><br>Last saved on<br><b>06 Jul 2019</b></p></td>
+              <td>
+                 
+                <span><img src="../Images/bell.png"width="60" height="60"style="padding-left:40px;"></span>
+              
+               </td>
+              <td><p>DRAFT<span class="dot" style="background:#D0C824;"></span></p></td>
+            </tr>
+            <tr>
+                <td><p><b>PUR-2019-056</b><br><br>Submitted on<br><b>20 Jun 2019</b></p></td>
+                  <td>  <span><img src="../Images/bell.png" width="60" height="60"style="padding-left:40px;"></span>
+                   </td>
+                  <td><p>REJECTED<span class="dot" style="background:#D03E24"></span></p></td>
+                </tr> 
+                <tr>
+                  <td> 
+                   <label></label>
+                  </td>
+                  <td>
+                      <p><b>SHOW MORE</b>
+                          <img src="../Images/drop.png" width="20" height="20">
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+          
+        </tr>
+  </table>
+
+</body>
+</html> 
+
