@@ -1,127 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+   .dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+</style>
 </head>
 <body>
-    <table style="width:100%;">
-        <tr>
-            <td style="border:2px solid #1c9aaa">
-                <table style="width:100%" >
+   <div style="background-color: whitesmoke;">
+      <table style="width:100%">
+          <tr>
+            <td style="padding:2px; ">
+               <div style="background-color: white;">
+                   <table style="width:100%;">
                     <tr> 
-                    <td style="border:solid #e6afaf">
-                        <table style="width:100%">
+                     <td>
+                        <table>
                           <tr>
-                             <td style="border:solid #afe0e6;">
+                             <td style="width:90%;">
                                <img src="../Images/menu.png" alt="menu"style= "width:30px ;height: 20;">
                              </td>
-                             <td style="border:solid #afe0e6;">
+                             <td style="width: 5%;">
                                <img src="../Images/profile.jpg" alt="profile" style="width:30px ;height: 20; border-radius:20px;" >
                             </td>
-                             <td style="border:solid #afe0e6;">
+                             <td style="width: 5%;">
                                 <p>John Doe</p>
                             </td>
-                             <td style="border:solid #582e88;">
-                              <img src="../Images/drop.png"alt="drop"style="width:30px ;height: 10;"> 
+                             <td style="width:5%;">
+                              <img src="../Images/drop.png"alt="drop"style="width:10px ;height: 10px;"> 
                             </td>
                          </tr>
                     </table>
              </td>
         </tr>
         <tr>
-            <td style="border:2px solid #1c9aaa">
-                <table style="width:100%;">
+            <td style="box-shadow: 0px 0px 10px #00000029;">
+                  <table style="box-shadow: 0px 0px 10px #00000029; width:100%; padding: 20px;">
                     <tr>
-                        <td style="border:2px solid #f45484">
-                        <span>My request</span>
-                         </td>
-                       <td style="border:2px solid #f45484">
-                        <input type="text" placeholder="search" value="search">
+                     <td>
+                        <span><u style="color: blue;"><b>MY REQUEST</b></u></span>
+                        </td>
+                       <td> 
+                        <input type="text" placeholder="search" value="search" style="color:#909090; border: 1px solid #B5B5B5;
+                        border-radius: 39px; width:40%;">
                         <img src="../Images/search.png" style="width: 20px; height: 10;">
                        </td>
-                        <td style="border:2px solid #f45484">
-                         <button name="NEW REQUEST">NEW REQUEST</button>
-                         </td>
+                        <td>
+                      <button name="NEW REQUEST" style="background-color:#32BDD2; border-radius: 21px; width: 30%;height: 40px; color:white;"> NEW REQUEST</button>
+                    </td>
                     </tr>
                  </table>
-                 <table style="width:100%;">
+                 <table style="width:100%; box-shadow: 0px 0px 2px #00000029;">
                     <tr>
-                        <td style="border:2px solid #52071d">
-                         <img src="../Images/filter.png" style="width:30px; height:10;">
+                        <td>
+                         <img src="../Images/filter.png" style="width:30px; height:10; padding-top:10px;">
                          <span>Filter</span><br>
-                         <span> Showing approved requests</span>
+                         <span style="margin-left:30px;"><b>Showing approved requests</b></span>
                         </td>
                     </tr>
                  </table>
-                 <table style="width:100%;">
+                 <table style="width:100%; box-shadow: 0px 0px 2px #00000029;">
                     <tr>
-                        <td style="border:2px solid #f454f4">
-                         <span>PUR-2019-056</span><br>
-                         <span> Submitted on</span><br>
-                         <span>06-jul-2019</span>
+                        <td>
+                         <span><b>PUR-2019-056</b></span><br>
+                         <p> Submitted on<br>
+                         06-jul-2019</p>
                         </td>
-                        <td style="border:2px solid #f454f4">
+                        <td>
                          <img src="../Images/bell.png" style="width:30px; height:10;">  
                        </td>
-                       <td style="border:2px solid #f454f4">
-                        <span>Approved</span>
+                       <td>
+                        <p>Approved<span class="dot" style="background:green;"></span></p>
                      </td>
                     </tr>
                  </table> 
-                 <table style="width:100%;">
+                 <table style="width:100%;box-shadow: 0px 0px 2px #00000029;">
                     <tr>
-                        <td style="border:2px solid #54f4c4">
-                         <span>PUR-2019-056</span><br>
-                         <span> Submitted on</span><br>
-                         <span>06-jul-2019</span>
+                        <td>
+                         <span><b>PUR-2019-056</b></span><br>
+                         <p> Submitted on<br>
+                         06-jul-2019</p>
                         </td>
-                        <td style="border:2px solid #54f4c4">
+                        <td>
                          <img src="../Images/bell.png" style="width:30px; height:10;">  
                        </td>
-                       <td style="border:2px solid #54f4c4">
-                        <span>Approved</span>
+                       <td>
+                      <p>Approved<span class="dot" style="background:green;"></span></p>
                      </td>
                     </tr>
                  </table>
-                 <table style="width:100%;">
+                 <table style="width:100%;box-shadow: 0px 0px 2px #00000029;">
                     <tr>
-                        <td style="border:2px solid #7f54f4">
-                         <span>PUR-2019-056</span><br>
-                         <span>Last saved on</span><br>
-                         <span>06-jul-2019</span>
+                        <td>
+                         <span><b>PUR-2019-056</b></span><br>
+                         <p>Last saved on<br>
+                         06-jul-2019</p>
                         </td>
-                        <td style="border:2px solid #7f54f4">
+                        <td>
                          <img src="../Images/bell.png" style="width:30px; height:10;">  
                        </td>
-                       <td style="border:2px solid #7f54f4">
-                        <span>Approved</span>
+                       <td>
+                     <p>Approved<span class="dot" style="background:green;"></span></p>
                      </td>
                     </tr>
                  </table> 
-                 <table style="width:100%;">
+                 <table style="width:100%; box-shadow: 0px 0px 2px #00000029;">
                     <tr>
-                        <td style="border:2px solid #f45484">
-                         <span>PUR-2019-056</span><br>
-                         <span> Submitted on</span><br>
-                         <span>20-jun-2019</span>
+                        <td>
+                         <span><b>PUR-2019-056</b></span><br>
+                         <p> Submitted on<br>
+                              20-jun-2019</p>
                         </td>
-                        <td style="border:2px solid #f45484">
+                        <td>
                          <img src="../Images/bell.png" style="width:30px; height:10;">  
                        </td>
-                       <td style="border:2px solid #f45484">
-                        <span>Approved</span>
+                       <td>
+                     <p>Approved<span class="dot" style="background:green;"></span></p>
                      </td>
                     </tr>
                  </table>
                  <table style="width:100%;">
                     <tr>
-                        <td style="border:2px solid #f45484">
+                        <td>
                             <span></span>
                         </td>
-                        <td style="border:2px solid #f45484">
-                            <span>Show more</span>
+                        <td style="width:20%;">
+                            <span style="color: #909090;">SHOW MORE</span>
                             <img src="../Images/drop.png" style="width:10px; height:10;">
                        </td>
-                       <td style="border:2px solid #f45484">
+                       <td>
                           <span></span>
                      </td>
                     </tr>
@@ -129,5 +142,10 @@
              </td>
         </tr>
      </table>
+   </div>'
+</td>
+</tr>
+</table>
+</div>'
 </body>
 </html>
