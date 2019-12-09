@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html>
+ <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">   
 <head>
+    <style>
+    #underline-gap {
+    text-decoration: underline;
+    text-underline-position: under;
+    
+  }
+  .textfont {
+        text-align: left;
+        font: Bold 14px/16px Calibri;
+        letter-spacing: 0.9px;
+        color: #505050;
+        opacity: 1;
+    }</style>
 </head>
 <body>
-<div style="background-color: whitesmoke;">
+    <div style="background-color: whitesmoke;">
 <table style="width:100%">
     <tr>
     <td style="padding:20px;">
         <div style="background-color: white; border-radius: 20px;">
-            <table style="width:100%">
+        <table style="width:100%">
             <tr>
-            <td style="box-shadow: 0px 0px 10px #00000029; padding:50px;border-radius: 20px;">
-            <table style="width:50%;margin-left:30%;">
-              <tr>
-                <td style=" padding:20px;">
-                <span style="position: relative;left:2%;"><b><h2><u>LOGIN</u></h2></b></span>
-                <table style="width:100%">
+             <td style="box-shadow: 0px 0px 10px #00000029; padding:30px;border-radius: 20px;">
+             <table style="width:50%;margin-left:30%;">
+                 <tr>
+                  <td style=" padding:40px;">
+                    <div id="underline-gap">
+                  <span style="position: relative;left:2%;font: Bold 16px/19px Roboto;"><h4>LOGIN</h4></span></div>
+                  <table style="width:100%">
                      <tr>
-                       <td style="border:solid white;">
-                        <p style="margin-left: 5px;">Email or Username</p>
-                        <table style="width:100%">
+                      <td style="border:solid white;">
+                      <p class="textfont" style="margin-left: 5px;">Email or Username</p>
+                      <table style="width:100%">
                          <tr>
-                        <td style="border:solid white;style=border:1px solid #D3D3D3;">
-                        <input type="text" name="Email" size="40" style="border:1px solid #D3D3D3 ;border-radius:3px;">
-                         </td>
-                         </tr>
+                          <td style="border:solid white;style=border:1px solid #D3D3D3;">
+                          <input type="text" name="Email" size="40" style="border:1px solid #D3D3D3 ;border-radius:3px;">
+                          </td>
+                          </tr>
                          <tr>
                              <td style="border:solid white;style=border:1px solid #D3D3D3;">
-                                <span><img src="../Images/warning.png"style="width:20px; height:10;">This field is required</span>
+                               <img src="../Images/warning.png"style="width:20px; height:20px;"> <span class="textfont">This field is required</span>
                              </td>
                              </tr>
                        </table>
@@ -35,48 +50,48 @@
                       </tr>
                 </table>
                 <table style="width:100%">
-                   <tr>
-                    <td style="border:solid white;">
-                    <p style="margin-left: 5px;">Password</p>
-                    <table style="width:100%">
-                        <tr>
-                    <td style="border:solid white;">
-                    <input type="text" name="Password" placeholder="******" size="40"  style="border:1px solid #D3D3D3 ;border-radius:3px;">
-                        </td>
-                        </tr>
+                    <tr>
+                       <td style="border:solid white;">
+                     <p class="textfont"style="margin-left: 5px;font: Regular 12px/14px Roboto;">Password</p>
+                     <table style="width:100%">
+                         <tr>
+                         <td style="border:solid white;">
+                         <input type="text" name="Password" placeholder="******" size="40"  style="border:1px solid #D3D3D3 ;border-radius:3px;">
+                         </td>
+                         </tr>
                         <tr>
                         <td style="border:solid white;style=border:1px solid #D3D3D3;">
-                            <span><img src="../Images/warning.png"style="width:20px; height:10;">This field is required</span>
+                        <img src="../Images/warning.png"style="width:20px; height:20px;"> <span class="textfont">This field is required</span>
                             </td>
                         </tr>
                     </table>
                      </td>
                  </tr>   
               </table>       
-         <table>
-            <tr>
-            <div style="margin-top: 20px;">
-                <td style="border:solid white; width:20;">
-                    <input type="checkbox">
-                </td>
-                <td style="border:solid white; width:30;">
-                <span>Remember me</span>
-                </td>
-                <td style="border:solid white;">
-                    <span style="padding-left: 70px;"><u>Forgot password</u></span>
-                 </td> 
-                </div>
-                </tr>
-         </table>
-         <table style="width:100%">
+              <table>
                 <tr>
-                <div style="margin-top: 20px;">
-                 <td style="border:solid white;">
-                    <button name="Login" style="background-color:#32BDD2; border-radius: 21px; width: 20%;height: 40px; color:white;">Login</button>
+                    <div style="margin-top: 10px;">
+                 <td style="border:solid white; width:20;">
+                       <input type="checkbox">
+                 </td>
+                <td style="border:solid white; width:30;">
+                    <span class="textfont"style="font: Regular 12px/14px Roboto;">Remember me</span>
+                 </td>
+                <td style="border:solid white;">
+                    <div id="underline-gap"><span class="textfont"style="padding-left: 70px;font:">Forgot password</span></div>
+                </td> 
+                </div>
+                </tr> 
+            </table>
+            <table style="width:100%">
+                <tr>
+                 <div style="margin-top: 50px;">
+                 <td style="border: 1px 1px 5px  #00000040;" >
+                    <button name="Login" style="background: #32BDD2;border: none; font: 12px/14px Roboto;box-shadow: 1px 1px 5px #00000040;border-radius: 21px; width: 20%;height: 42px; color:white">LOGIN</button>
                  </td>
                  </div>
                  </tr>
-        </table>
+            </table>
          </td>
          </tr>
          </table>
