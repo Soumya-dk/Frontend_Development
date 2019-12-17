@@ -57,7 +57,14 @@
 }
 .column1{
   float: right;
-  width: 89.5%;
+  width: 90%;
+
+   /* Should be removed. Only for demonstration */
+}
+.column2{
+  float: right;
+  width: 30%;
+  
 
    /* Should be removed. Only for demonstration */
 }
@@ -65,7 +72,7 @@
         </style>
     </head>
     <body>
-     <div style="border:2px solid white;"class="row">
+     <div style="border:1px solid #ffffff;"class="row">
         <div style="background-color: white;"class="column">
         <div><img src="../Images/back-button-mobile.png" alt="back"style="width:20%;height:10%;padding-left:40%"></div>
         <div>
@@ -88,32 +95,55 @@
               whom we are designing. We will synthesize your observations and<br>
              draw out unexpected insights.We populate the map by taking<br>
              note of the four traits of a user.Emotional or Physical needs are</span>
-            </div></div>
+            </div>
+           
+           
+            <div class="column2" style="background-color: rgb(188, 123, 248);">
+              <svg height="300" width="300">
+ 
+                <circle cx="100" cy="100" r="80" fill="url(#image)" stroke="whitesmoke" stroke-width="2"/>
+                <circle cx="100" cy="100" r="70" fill="url(#image)" stroke="whitesmoke" stroke-width="2"/>
+                <defs>
+                  <pattern id="image" x="20%" y="0%" height="100%" width="100%"
+                           viewBox="0 0 512 512">
+                    <image x="0%" y="0%" width="300" height="502" href="../Images/brain1.png" style="background-color: rgb(188, 123, 248);"></image>
+                  </pattern>
+                </defs>
+                <line x1="10" y1="100" x2="40" y2="100" style="stroke:whitesmoke;stroke-width:2 height=10 width=10"/>
+                
+                <g stroke="black" stroke-width="1" fill="white">
+                  <circle id="pointA" cx="100" cy="10" r="3" />
+                  </g>
+        
+                <line x1="100" y1="40" x2="100" y2="10" style="stroke: whitesmoke; stroke-width:2 height=10 width=10"/>
+                <g stroke="black" stroke-width="1" fill="white">
+                  <circle id="pointA" cx="100" cy="200" r="3" />
+                  </g>
+                
+                <line x1="100" y1="200" x2="100" y2="160" style="stroke:whitesmoke;stroke-width:2 height=10 width=10"/>
+                <g stroke="black" stroke-width="1" fill="white">
+                  <circle id="pointA" cx="10" cy="100" r="3" />
+                  </g>
+               
+                <line x1="160" y1="100" x2="200" y2="100" style="stroke:whitesmoke;stroke-width:2 height=10 width=10"/>
+                <g stroke="black" stroke-width="1" fill="white">
+                  <circle id="pointA" cx="200" cy="100" r="3" />
+                  </g>
+                
+                 
+                <text x="100" y="10" dx="-10">Say</text>
+                <text x="4" y="110" dy="-10">Think</text>
+                <text x="180" y="100" dx="10">Feel</text>
+                <text x="30" y="200" dx="70">Do</text>
+               </svg>
+            
+            </div>
+          </div>
             <div style="padding:5%;padding-left:8%"> <img src="../Images/cw-icons-07.png" alt="forwadarrow" style="width:3%;height:3%;">
              <img src="../Images/cw-icons-06.png"alt="backarrow"style="width:3%;height:3%"></div>
        </div>
  </div>
     
-<div style="border:2px black">
-     <svg height="100" width="100">
-        <circle cx="50" cy="50" r="40" stroke="lightgrey" stroke-width="10" fill="white"/>
-        <text x="100" y="50" dx="-30">Say</text>
-        <text x="250" y="50" dy="-10">Think</text>
-        <text x="100" y="50" dx="30">Feel</text>
-        <text x="100" y="350" dx="-30">Do</text>
-       </svg>
-       <svg id="graph" width="100%" height="400px">
 
-          <!-- pattern -->
-          <defs>
-            <pattern id="image" x="0%" y="0%" height="100%" width="100%"
-                     viewBox="0 0 512 512">
-              <image x="0%" y="0%" width="512" height="512" href="../Images/brain.PNG"></image>
-            </pattern>
-          </defs>
-            
-          <circle id="sd" class="medium" cx="5%" cy="40%" r="5%" fill="url(#image)" stroke="lightblue" stroke-width="0.5%" />
-        </svg>
-  </div>
-    </body>
+ </body>
 </html>
