@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
+<style>
 .body 
   font-family: Arial
 }
@@ -114,7 +112,7 @@ i {
 }
 #mmm{
             position: relative;
-            top: 40px;
+            top: 8px;
             right: -35px;
             left: -14px;
         }
@@ -123,7 +121,7 @@ i {
             
             transform: rotate(270deg);
            position: relative;
-           top: 2px;
+           top: -30px;
             right: 30px;
             left: -315px;
             
@@ -133,7 +131,7 @@ i {
             width:35.8px;
             border:1px dotted black;
             position: relative;
-            top:20px;
+            top:-15px;
             right: 30px;
             left: -20px;
             
@@ -148,18 +146,12 @@ i {
   -webkit-border-radius: 0.8em;
   color:black;
   display: inline-block;
- 
   line-height: 1.6em;
   margin-right: 5px;
   text-align: center;
   width: 1.5em; 
 }
-        .vertical-line{
-        display: inline-block;
-        border-left: 1px solid #ccc;
-        margin: 0 10px;
-        height: 125px; 
-        } 
+      
         h6 {
             float: right;
             margin-bottom: 30px;
@@ -173,121 +165,87 @@ i {
             
         }
 
-        #model1 {
+       #model1{
             position: relative;
-            top: 20px;
-            right: 30px;
-            left: 90px;
-        }
+            top: 30px;
+            right: -1px;
+            left: -200px;
 
-        #model2 {
-            position: relative;
-            top: 5px;
-            right: 30px;
-            left: -250px;
-        }
-
-        #model3 {
-            position: relative;
-            top: 5px;
-            right: 30px;
-            left: -260px;
-        }
-        #model4{
+       }
+        #model2{
             position: relative;
             top: 5px;
             right: 10px;
-            left: 30px;
+            left: 20px;
         }
-        #model5{
+        #model3{
             position: relative;
             top: -18px;
             right: 30px;
-            left: 680px;
+            left: 650px;
         }
         
-        #model6{
+        #model4{
             position: relative;
             top: 25px;
             right: 20px;
             left: 30px;
         }
-
-        #model7{
+        #model5{
             position: relative;
-            bottom: 20px;
-            right: 30px;
-            left: 300px;
-        }
-        #model8{
-            position: relative;
-            bottom: 20px;
-            right: 30px;
-            left: 400px;
-        }
-        #model9{
-            position: relative;
-            bottom: 20px;
-            right: 30px;
-            left: 500px;
-        }
-        #model10{
-            position: relative;
-            bottom: 20px;
-            right: 30px;
-            left: 600px;
-            
-        }
-        #model11{
-            position: relative;
-            bottom: 15px;
+            top: 5px;
             right: 10px;
-            left: 450px;
+            left: 50px;
         }
         
         
 .row1{
-  padding: 10px;
+  padding: 20px;
   background:lightgray;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   
 }
 .row2{
-  padding: 10px;
+  padding: 100px;
   background: rgb(228, 227, 227);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   
 }
-.row3{
-  padding: 10px;
-  background:  rgb(228, 227, 227);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+.div1{
+    background-color: white;
+   width: 380px;
+  height: 120px;
+  border: 1px solid black;
+  right: 400px;
   
 }
-.row4{
-  padding: 10px;
-  background:  rgb(228, 227, 227);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+.div2{
+     
+   
+    position: relative;
+    right:-30px;
+     bottom: 120px;
+    left: 380px;
+   background: rgb(125, 125, 233);
+  width: 300px;
+  height: 120px;
+  border: 1px solid black;
   
 }
-.row5{
-  padding: 10px;
-  background: rgb(228, 227, 227);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  
-}
-.row6{
-  padding: 10px;
-  background:  rgb(228, 227, 227);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  
-}
+p {outline-color: white;}
+
+p.dotted {outline-style: dotted;
+            position: relative;
+            right:-20px;
+    
+    top: 10px;
+    left: 30px;
+    width: 230px;
+  height: 80px;
+        } 
+ 
 </style>
 </head>
 <body>
@@ -315,13 +273,14 @@ i {
     <div class="row">
     <div class="column1" style="background-color:white;">
         <h6 id="mm">REQUSITION</h6><br />
+        
         <span class="step" id="mmm">1</span>
         
         <br /><br /><hr id="m"/>
-        <span class="step" id="mmm" style="background-color:blue">2</span>
+        <span class="step" id="mmm">2</span>
         
         <br /><br /><hr id="m"/>
-        <span class="step" id="mmm">3</span>
+        <span class="step" id="mmm" style="background-color:blue">3</span>
         <br /><br /><hr id="m"/>
         <span class="step" id="mmm">4</span>
         <br /><br /><hr id="m"/>
@@ -332,74 +291,26 @@ i {
     
  <div class="column2">
    <div class="row1">
-     <h3>ITEMS</h3>
-     
-     Lorem ipsum dolar sit amet,consectetur adipiscing elit.
-    
-
-     <span id="model11"><b>ADD ITEMS</b>&nbsp;<img src="additem.png" alt="additem"></span>
-    </div>
+     <h3>ATTACHMENTS</h3>
+    Lorem ipsum dolar sit amet,consectetur adipiscing elit.
+  </div>
     <div class="row2">
-      IBM Thinkserver TS150 Tower Server width<br>
-      Max.Processor 1X intel Xeon E3(Quad<br>
-      Core) E3-1225 v5*(3.3 GHz/Cache 8 MB)
-      <br>
-      <u><b>READ MORE </u></b>
-    <span id="model7">01</span>
-      <span id ="model8">01-jul-2019</span>
-      <span id="model9">Rs 45,000</span>
-      <span id="model10"><img src="xbox_menu.png" alt="xbox_menu"></span>
+      <div class="div1">
+     <span> &nbsp;<b>Select a file form my computer.</b><br>
+      &nbsp; Maximum allowed size is 5MB per file.Only documents like <br>
+       &nbsp; pdf,docx,ppt,xls,etc are allowed.</span>
+       <input type="button" value="BROWSE" id="model1" style="border-radius:10px;color:white;background-color:blue;height:25px;" />
+      </div>
+      <div class="div2">
+      
+            <p class="dotted"><img src="dropfile.png" alt="dropfile" style="padding:30px;">Drop a file here</p>
+           
     </div>
-    <div class="row3">
-      Lenovo ThinkServer TS450<br>
-      (PN 70m2001VH) with Max Processor 1<br>
-      x intel Xeon E3 (Quad Core) E3 1225
-      <br>
-      <u><b>READ MORE </u></b>
-      <span id="model7">01</span>
-      <span id ="model8">01-jul-2019</span>
-      <span id="model9">Rs 45,000</span>
-      <span id="model10"></span>
-        <span id="model10"><img src="xbox_menu.png" alt="xbox_menu"></span>
     </div>
-    <div class="row4">
-      IBM X33DDM4 Server with x3300M4/Part<br>
-    NO.7382144/ Intel Xean E% 1230v2 1.8<br>
-    GHz,10MB,1066MHZ/1x 8GB RAM/  
-    <br>
-    <u><b>READ MORE </u></b>
-      <span id="model7">01</span>
-      <span id ="model8">01-jul-2019</span>
-      <span id="model9">Rs 45,000</span>
-      <span id="model10"><img src="xbox_menu.png" alt="xbox_menu"></span>
-    </div>
-    <div class="row5">
-    IBM Lenovo ThinkServer RD450 Rack<br>
-    Server (PN 70Q900591H) with 1x intel@<br>
-    Xeon@ E5-2620v4(2.1GHz/Bc/20MB/)
-    <br>
-    <u><b>READ MORE </u></b>
-      <span id="model7">01</span>
-      <span id ="model8">01-jul-2019</span>
-      <span id="model9">Rs 45,000</span>
-      <span id="model10"><img src="xbox_menu.png" alt="xbox_menu"></span>
-    </div>
-    <div class="row6">
-      daptec 128 MB Raid Controller Pair.Pcl-0<br>
-      SAS/SATA
-      <br>
-      <u><b>READ MORE </u></b>
-      <span id="model7">01</span>
-      <span id ="model8">01-jul-2019</span>
-      <span id="model9">Rs 45,000</span>
-      <span id="model10"><img src="xbox_menu.png" alt="xbox_menu"></span>
-    </div>
- 
-  
- <p class="m2" id="model6">SAVE DRAFT</p><hr class="m3" id="model4" />
+ <p class="m2" id="model4">SAVE DRAFT</p><hr class="m3" id="model2" />
 
- <span class="m2" id="model5"><hr class="m3" id="model4" />BACK</span>
-    <input type="button" value="Next ->" id="model5" style="border-radius:10px;color:white;background-color:blue;height:25px;" />
+ <span class="m2" id="model3"><hr class="m3" id="model5" />BACK</span>
+    <input type="button" value="Next ->" id="model3" style="border-radius:10px;color:white;background-color:blue;height:25px;" />
               
                   
   </div>

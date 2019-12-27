@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+
+        body{
+            margin-left:25px;
+        }
+        .container {
+            border: 3px solid #F6F8F9;
+            width:1300px;
+        }
+
+        .bar {
+            width: 15px;
+            height: 3px;
+            background-color: #aaa;
+            margin: 3px 5px;
+            display: block;
+            position: relative;
+            top: 25px;
+            right: 10px;
+            left: 15px;
+        }
+
+        .content {
+            padding: 7px;
+            background-color: #F6F8F9;
+        }
+
+
+        .column {
+            float: left;
+            width: 50%;
+           
+        }
+
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        .fa {
+            padding: 2em;
+        }
+
+        .avatar {
+            
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position:relative;
+            left:480px;
+            top:25px;
+        }
+
+        h6 {
+            float: right;
+            margin-bottom: 30px;
+            position: relative;
+            left:420px;
+            margin-left: 60px;
+        }
+
+        
+        .header {
+       
+            background: white;
+            font-size: 30px;
+            width:850px;
+            height:40%;
+       
+        }
+
+        i {
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-bottom: 40px;
+            margin-right: -70px;
+        }
+
+        .m3 {
+            border: 1px solid lightblue;
+            width: 100px;
+            float: left;
+       }
+
+       
+        
+       
+        #m1{
+            
+            transform: rotate(270deg);
+        
+            position: relative;
+            top: 18px;
+            
+            
+        }
+       
+        .vertical-line{
+        display: inline-block;
+        border-left: 1px solid #ccc;
+        margin: 0 10px;
+        height: 125px; 
+        } 
+       
+        
+           
+        #model1 {
+            position: relative;
+            left:540px;
+            bottom:8px;
+        }
+
+
+       
+        #model2{
+            position: relative;
+           
+            right: 10px;
+            left:400px;
+            top:10px;
+        }
+        #model3{
+          position: relative;
+            bottom: 50px;
+            left : 85%;
+            
+        }
+       #model4{
+            position: relative;
+            bottom: 60px;
+            left : 85%;
+            
+
+        } 
+        
+.row1{
+  padding: 10px;
+  background: #F0F0F0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  
+}
+.row2{
+  padding: 10%;
+  background: #FFFFFF;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 50%;
+  
+}
+.row3{
+  padding: 10px;
+   border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-bottom: 10px;
+left: 179px;
+width: 550px;
+height: 51px;
+background: #F4F8FA 0% 0% no-repeat padding-box;
+border: 1px solid #D5E2E8;
+opacity: 1;
+
+}
+.row4{
+  padding: 10px;
+ border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-bottom: 10px;
+left: 179px;
+width: 550px;
+height: 51px;
+background: #F4F8FA 0% 0% no-repeat padding-box;
+border: 1px solid #D5E2E8;
+opacity: 1;
+}
+  
+.row5{
+  padding: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-bottom: 10px;
+left: 179px;
+width: 550px;
+height: 41px;
+background: #F4F8FA 0% 0% no-repeat padding-box;
+border: 1px solid #D5E2E8;
+opacity: 1;
+}
+
+
+.avatar {
+  vertical-align: right;
+  width: 50px;
+  height: 34px;
+ 
+  margin-bottom: 30px;
+  border-radius: 50%;
+ margin-left: 200px;
+}
+
+  
+
+    </style>
+</head>
+ <body >
+     <div class="container">
+         <div class="header">
+             <div class="row">
+
+
+                 <div class="column left">
+                     <div style="float:left">
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                     </div>
+                 </div>
+                 <div class="column left">
+                     <div style="float:right">
+                         <img src="../Images/avatar.png.jpg" alt="Avatar" class="avatar" ><h6  style="font-size:12px" id="model2">John Deo</h6>
+                         <img src="../Images/drop.png" style='font-size:24px;width:20px;height:20px;' id="model1">
+                     </div>
+
+                 </div>
+
+             </div>
+         </div>
+
+         <div class="content">
+             <div class="row">
+                 <div class="column" style="background-color:white;width:100px;height:530px;">
+                     <b><p id="m1" style="font-family:Calibri;font-size:14px;line-height:5">REQUSITION</p></b>
+                     <img src="../Images/form4.png" style="width:80px;height:300px; position:relative;top:30px;left:6px;">
+                 </div>
+
+                 <div class="column" style="background-color:#FCFCFC;width:90%;height:300px;margin-left:10px;">
+ 
+    
+                        <div class="row1">
+                          <h3>Invite People</h3><p>
+                          Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+                          <span id="model4"><b>ADD PEOPLE</b></span><span id="model3"><img src="../Images/add.png" alt="additem" width="3%"></span>
+                         </div>
+                       
+                         <div class="row2">
+                             <div class="row3">
+                                     <img src="../Images/avatar.png.jpg" style="width:10%;height:80%; position:relative;top:20%;left:1%;border-radius: 50%;">
+                                       <b>Luke Ray</b><br>
+                                       Lorem ipsum doler sit amet.
+                               
+                     <img src="../Images/delete.png" style="width:10%;height:80%; position:relative;bottom:50%;left:50%;border-radius: 50%;">
+                        </div>
+                        <div class="row4">
+                             <img src="../Images/avatar1.png" style="width:10%;height:80%; position:relative;top:20%;left:1%;border-radius: 50%;">
+                                         <b>Daisy Lake</b><br>
+                                         Lorem ipsum doler sit amet.
+                            
+                     <img src="../Images/delete.png" style="width:10%;height:80%; position:relative;bottom:50%;left:50%;border-radius: 50%;">
+                         </div>
+                         <div class="row5">
+                                 <img src="../Images/avatar.png.jpg" style="width:10%;height:80%; position:relative;top:20%;left:1%;border-radius: 50%;">
+                                        <b>Mark Smith</b><br>
+                                         Lorem ipsum doler sit amet.
+                                         
+                     <img src="../Images/delete.png" style="width:10%;height:80%; position:relative;bottom:50%;left:50%;border-radius: 50%;">
+                                 </div>   
+        
+
+</div>
+
+</body>
+</html> 

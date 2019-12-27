@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+
+        body{
+            margin-left:25px;
+        }
+        .container {
+            border: 3px solid #F6F8F9;
+            width:1300px;
+        }
+
+        .bar {
+            width: 15px;
+            height: 3px;
+            background-color: #aaa;
+            margin: 3px 5px;
+            display: block;
+            position: relative;
+            top: 25px;
+            right: 10px;
+            left: 15px;
+        }
+
+        .content {
+            padding: 7px;
+            background-color: #F6F8F9;
+        }
+
+
+        .column {
+            float: left;
+            width: 50%;
+           
+        }
+
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        .fa {
+            padding: 2em;
+        }
+
+        .avatar {
+            
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position:relative;
+            left:500px;
+            top:15px;
+        }
+
+        h6 {
+            float: right;
+            margin-bottom: 30px;
+            position: relative;
+            left:420px;
+            margin-left: 60px;
+        }
+
+        
+        .header {
+       
+            background: white;
+            font-size: 30px;
+            width:850px;
+            height:40%;
+       
+        }
+
+        i {
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-bottom: 40px;
+            margin-right: -70px;
+        }
+
+        .m3 {
+            border: 1px solid lightblue;
+            width: 100px;
+            float: left;
+       }
+
+       
+        
+       
+        #m1{
+            
+            transform: rotate(270deg);
+        
+            position: relative;
+            top: 18px;
+            
+            
+        }
+       
+        .vertical-line{
+        display: inline-block;
+        border-left: 1px solid #ccc;
+        margin: 0 10px;
+        height: 125px; 
+        } 
+       
+        
+        #model1 {
+            position: relative;
+            left:550px;
+            top:15px;
+        }
+
+
+#model2{
+  position: relative;
+            bottom: 10px;
+            right: 10px;
+            left: 580px;
+}
+        
+#model3{
+            position: relative;
+            top: 18px;
+            right: 30px;
+            left: 20px;
+            
+        }
+        #model4{
+           
+            bottom: 20px;
+            position: relative;
+            bottom:16px;
+            left:1000px;
+            color: #32BDD2;
+        }
+       
+        #model5{
+            position: relative;
+            bottom:4px;
+            right: 30px;
+            left: 40px;
+            color: #32BDD2;
+            border-radius:29px;
+            color:white;
+            background-color:#32BDD2;
+            height:25px; 
+            width:70px;
+        }
+       
+#model6{
+  border-radius:10px;
+  color:white;
+  background-color:#32BDD2;
+  height:25px;
+  top:80px;
+
+}
+        
+       
+        .row1{
+  padding: 20px;
+  background: #F0F0F0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  
+}
+.row2{
+  padding: 100px;
+  background: #FFFFFF;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 50%;
+  
+}
+.div1{
+    background-color: white;
+   width: 380px;
+  height: 120px;
+  border: 1px solid black;
+  right: 400px;
+  
+}
+.div2{
+     
+   
+    position: relative;
+    right:-30px;
+     bottom: 120px;
+    left: 380px;
+   background: #32BDD2;
+  width: 300px;
+  height: 120px;
+  border: 1px solid black;
+  
+}
+p {outline-color: white;}
+
+p.dotted {outline-style: dotted;
+            position: relative;
+            right:-20px;
+    
+    top: 10px;
+    left: 30px;
+    width: 230px;
+  height: 80px;
+        } 
+  
+
+    </style>
+</head>
+ <body >
+     <div class="container">
+         <div class="header">
+             <div class="row">
+
+
+                 <div class="column left">
+                     <div style="float:left">
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                     </div>
+                 </div>
+                 <div class="column left">
+                     <div style="float:right">
+                         <img src="../Images/avatar.png.jpg" alt="Avatar" class="avatar" ><h6  style="font-size:12px">John Deo</h6>
+                         <img src="../Images/drop.png" style='font-size:24px;width:20px;height:20px;' id="model1">
+                     </div>
+
+                 </div>
+
+             </div>
+         </div>
+
+         <div class="content">
+             <div class="row">
+                 <div class="column" style="background-color:white;width:100px;height:790px;">
+                     <b><p id="m1" style="font-family:Calibri;font-size:14px;line-height:5">REQUSITION</p></b>
+                     <img src="../Images/form3.png" style="width:80px;height:400px; position:relative;top:30px;left:6px;">
+                 </div>
+
+                 <div class="column" style="background-color:#FCFCFC;width:90%;height:5%;margin-left:10px;">
+                      
+
+   
+        <div class="row1">
+            <h3>ATTACHMENTS</h3>
+           Lorem ipsum dolar sit amet,consectetur adipiscing elit.
+         </div>
+           <div class="row2">
+             <div class="div1">
+            <span> &nbsp;<b>Select a file form my computer.</b><br>
+             &nbsp; Maximum allowed size is 5MB per file.Only documents like <br>
+              &nbsp; pdf,docx,ppt,xls,etc are allowed.</span>
+              <input type="button" value="BROWSE" id="model6" />
+             </div>
+             <div class="div2">
+             
+                   <p class="dotted"><img src="../Images/cloud.png" alt="dropfile" width="30px" style=top:20px;><br>Drop a file here</p>
+                  
+           </div>
+           </div>
+      
+  <u><p id="model3">SAVE DRAFT</p></u>
+ 
+  <u><p id="model4">BACK</u>
+     <input type="button" value="Next ->" id="model5" >
+               
+     </div>           
+</body >
+ </html >
+ 
+
+
+    
+   
+ 
+
+    
+  
