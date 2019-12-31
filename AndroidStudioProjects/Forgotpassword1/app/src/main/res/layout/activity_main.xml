@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#72000000"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/shadow2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:elevation="2dp"
+            android:background="@drawable/shadow"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:ems="50"
+                android:paddingTop="5dp"
+                android:paddingLeft="15dp"
+                android:text="FORGOT PASSWORD"
+                android:textColor="#747474"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </TextView>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:paddingRight="2dp"
+                android:src="@drawable/cancel">
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shadow1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="10dp"
+                android:text="The link has been sent to your email.\nThe generated link will be active for 24 hours.">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
