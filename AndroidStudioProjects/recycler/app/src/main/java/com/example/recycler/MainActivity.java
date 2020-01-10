@@ -19,10 +19,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         items = new ArrayList<>();
-        items.add("First CardView Item");
-        items.add("Second CardView Item");
-        items.add("Third CardView Item");
-        items.add("Four CardView Item");
+        items.add("John Campbell");
+        items.add("Kate Gill");
+        items.add("Harry Weasley");
+        items.add("Daisy Lake");
+        items.add("Mark Smith");
+
 
 
         recyclerView = findViewById(R.id.cycler);
