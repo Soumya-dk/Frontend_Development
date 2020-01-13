@@ -8,11 +8,12 @@
     tools:context=".MainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="25dp"
         android:background="@drawable/menubar">
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:paddingTop="4dp"
             android:layout_alignParentLeft="true"
             android:src="@drawable/menu">
         </ImageView>
@@ -25,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="30dp"
-            android:text="Add People"
+            android:text="Add Approver"
             android:textSize="12dp"
             android:textColor="#424242">
         </TextView>
@@ -68,4 +69,61 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/line1"
+            android:layout_marginTop="4dp">
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="CANCEL"
+            android:textColor="#595959"
+            android:textSize="10dp"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/line2">
+        </TextView>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:text="03 selected"
+            android:padding="4dp"
+            android:textSize="9dp"
+            android:textColor="#707070"
+            android:background="@drawable/selected">
+        </TextView>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_done"
+            android:text="DONE"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"
+            android:textStyle="bold">
+        </Button>
+    </RelativeLayout>
+
 </RelativeLayout>

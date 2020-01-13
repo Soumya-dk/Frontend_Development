@@ -7,36 +7,53 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:orientation="horizontal"
-            android:background="#FFF"
-            android:elevation="10dp">
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/profile" />
-            <LinearLayout
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border1">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/profile">
+                </ImageView>
                 <TextView
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:layout_height="34dp"
+                    android:paddingLeft="52dp"
+                    android:paddingTop="6dp"
+                    android:text="Luke Ray"
+                    android:textColor="#747474"
+                    android:textSize="10dp">
+                </TextView>
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:paddingLeft="52dp"
+                    android:text="Lorem ipsum doler sit amet."
                     android:textColor="#909090"
-                    android:textSize="10dp"
-                    android:text="Lorem ipsum doler sit amet." />
-            </LinearLayout>
-        </RelativeLayout>
+                    android:textSize="10dp">
+                </TextView>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="18dp"
+                    android:paddingTop="4dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/add">
+                </ImageView>
+            </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
