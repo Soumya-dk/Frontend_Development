@@ -7,7 +7,6 @@ public class Article {
     String image;
 
     public Article() {
-
     }
 
     public String getTitle() {

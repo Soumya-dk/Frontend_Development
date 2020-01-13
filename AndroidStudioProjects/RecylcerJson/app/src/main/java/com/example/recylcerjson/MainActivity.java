@@ -1,76 +1,59 @@
 package com.example.recylcerjson;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.util.Log;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
-import org.json.JSONObject;
 import org.json.JSONArray;
+import org.json.JSONObject;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    String url = "https://api.myjson.com/bins/nlo2y";
     RecyclerView recyclerView;
-    ArticleAdapter adaptor;
+    ArticleAdapter adapter;
 
-    ArrayList<Article> articles;
+    ArrayList<String> articles = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView = findViewById(R.id.recyclerview);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adaptor = new ArticleAdapter();
-        recyclerView.setAdapter(adaptor);
-        articles = new ArrayList<>();
-        getData();
+        get_json();
     }
+    public void get_json()
+    {
+        String json;
+        try{
+            InputStream is = getAssets().open("a.json");
+            int size = is .available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
 
-    private void getData() {
-        final ProgressDialog progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Loading...");
-        progressDialog.show();
+            json = new String(buffer,"UTF-8");
+            JSONArray jsonArray = new JSONArray(json);
 
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
-            @Override
-            public void onResponse(JSONArray response) {
-                for (int i = 0; i < response.length(); i++) {
-                    try {
-                        JSONObject jsonObject = response.getJSONObject(i);
-
-                        Article article = new Article();
-                        article.setImage(jsonObject.getString("image"));
-                        article.setTitle(jsonObject.getString("title"));
-                        article.setBody(jsonObject.getString("body"));
-                        articles.add(article);
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                        progressDialog.dismiss();
-                    }
+            for (int i=0; i<jsonArray.length();i++)
+            {
+                JSONObject obj = jsonArray.getJSONObject(i);
+                if (obj.getString("title").equals(recyclerView))
+                {
+                    articles.add(obj.getString("number"));
                 }
-                adaptor.setData(articles);
-                adaptor.notifyDataSetChanged();
-                progressDialog.dismiss();
             }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e("Volley", error.toString());
-                progressDialog.dismiss();
-            }
-        });
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(jsonArrayRequest);
+           Toast.makeText(getApplicationContext(),articles.toString(),Toast.LENGTH_LONG).show();
+        }
+
+
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -4,49 +4,47 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import java.util.List;
 
-import com.squareup.picasso.Picasso;
+public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHolder>{
 
-import java.util.ArrayList;
+    private LayoutInflater layoutInflater;
+    private List<String> data;
 
-public class ArticleAdapter extends RecyclerView.Adapter<ArticleViewholder> {
-
-    ArrayList<Article> articles;
-
-
-    public ArticleAdapter() {
-        articles = new ArrayList<>();
-    }
-
-    public void setData(ArrayList<Article> articles){
-        this.articles = articles;
-
+    ArticleAdapter(Context context, List<String> data){
+        this.layoutInflater = LayoutInflater.from(context);
+        this.data = data;
     }
 
     @NonNull
     @Override
-    public ArticleViewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        Context context = parent.getContext();
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View articleView = layoutInflater.inflate(R.layout.recycler_row,parent,false);
-        return new ArticleViewholder(articleView);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        View view = layoutInflater.inflate(R.layout.recycler_row, viewGroup, false);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ArticleViewholder holder, int position) {
-         Article article = articles.get(position);
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+        String title = data.get(i);
+        viewHolder.textTitle.setText(title);
 
-        Picasso.get().load(article.image).into(holder.image);
-         holder.title.setText(article.title);
-         holder.body.setText(article.body);
     }
 
     @Override
     public int getItemCount() {
-        return articles.size();
+        return data.size();
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder{
+        TextView textTitle,textBody;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            textTitle = itemView.findViewById(R.id.title);
+            textBody = itemView.findViewById(R.id.body);
+        }
     }
 }
