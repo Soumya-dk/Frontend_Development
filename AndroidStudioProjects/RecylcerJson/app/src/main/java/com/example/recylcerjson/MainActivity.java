@@ -1,59 +1,35 @@
 package com.example.recylcerjson;
 
-import android.os.Bundle;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import org.json.JSONException;
-import org.json.JSONArray;
-import org.json.JSONObject;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
 
+import android.os.Bundle;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-    ArticleAdapter adapter;
+    private RecyclerView.LayoutManager layoutManager;
+    private List<String> listData = new ArrayList<>();
 
-    ArrayList<String> articles = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        get_json();
+        setupList();
+
+        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.cycler);
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        Adapter adapter = new Adapter(listData,this);
+        recyclerView.setAdapter(adapter);
     }
-    public void get_json()
-    {
-        String json;
-        try{
-            InputStream is = getAssets().open("a.json");
-            int size = is .available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
 
-            json = new String(buffer,"UTF-8");
-            JSONArray jsonArray = new JSONArray(json);
-
-            for (int i=0; i<jsonArray.length();i++)
-            {
-                JSONObject obj = jsonArray.getJSONObject(i);
-                if (obj.getString("title").equals(recyclerView))
-                {
-                    articles.add(obj.getString("number"));
-                }
-            }
-           Toast.makeText(getApplicationContext(),articles.toString(),Toast.LENGTH_LONG).show();
-        }
-
-
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+    private void setupList() {
+        for(int i=1; i<=1; i++)
+            listData.add("");
     }
 }
