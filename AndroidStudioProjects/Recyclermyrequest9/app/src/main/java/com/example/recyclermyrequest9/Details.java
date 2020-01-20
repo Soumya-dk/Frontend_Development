@@ -2,7 +2,7 @@ package com.example.recyclermyrequest9;
 
 public class Details {
 
-    private String title,description;
+    private String title,description,description1;
     private int img;
 
     public String getTitle() {

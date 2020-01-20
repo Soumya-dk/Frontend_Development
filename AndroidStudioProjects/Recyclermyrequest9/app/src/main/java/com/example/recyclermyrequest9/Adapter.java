@@ -35,7 +35,7 @@ public class Adapter extends RecyclerView.Adapter<Holder> {
     public void onBindViewHolder(@NonNull Holder holder, int i) {
 
         holder.mTitle.setText(details.get(i).getTitle());
-        holder.mDesc.setText(details.get(i).getTitle());
+        holder.mDesc.setText(details.get(i).getDescription());
         holder.mImageView.setImageResource(details.get(i).getImg());
 
     }
