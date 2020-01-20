@@ -2,84 +2,58 @@ package com.example.recyclernextactvity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import java.util.List;
 
-import java.io.ByteArrayOutputStream;
-import java.util.ArrayList;
+public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
+    private LayoutInflater layoutInflater;
+    private List<String> data;
 
-public class Adapter extends RecyclerView.Adapter<Holder> {
-
-    Context c;
-    ArrayList<Model> models;
-
-    public Adapter(Context c, ArrayList<Model> models) {
-        this.c = c;
-        this.models = models;
+    Adapter(Context context,List<String>data){
+        this.layoutInflater = LayoutInflater.from(context);
+        this.data = data;
     }
 
     @NonNull
     @Override
-    public Holder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.card,null);
-        return new Holder(view);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+        View view = layoutInflater.inflate(R.layout.card,viewGroup,false);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final Holder holder, final int i) {
-        holder.mTitle.setText(models.get(i).getTitle());
-        holder.mDes.setText(models.get(i).getDescription());
-        holder.mImageView.setImageResource(models.get(i).getImg());
-
-       holder.setItemClickListener(new ItemClickListener() {
-           @Override
-           public void onItemClickListener(View v, int position) {
-
-               String gTitle = models.get(position).getTitle();
-               String gDes = models.get(position).getDescription();
-               BitmapDrawable bitmapDrawable = (BitmapDrawable)holder.mImageView.getDrawable();
-
-               Bitmap bitmap = bitmapDrawable.getBitmap();
-
-               ByteArrayOutputStream stream = new ByteArrayOutputStream();
-
-               bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-
-               byte[] bytes = stream.toByteArray();
-
-               Intent intent = new Intent(c, Activity2.class);
-               intent.putExtra("iTitle", gTitle);
-               intent.putExtra("iDes",gDes);
-               intent.putExtra("iImage",bytes);
-               c.startActivity(intent);
-
-
-           }
-       });
-
-       holder.setItemClickListener(new ItemClickListener() {
-           @Override
-           public void onItemClickListener(View v, int position) {
-               if (models.get(position).getTitle().equals("name")){
-
-               }
-               if (models.get(position).getTitle().equals("name1")){
-
-               }
-           }
-       });
-
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+        String title = data.get(i);
+        viewHolder.textTitle.setText(title);
     }
 
     @Override
     public int getItemCount() {
-        return models.size();
+        return data.size();
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        TextView textTitle,textDescription;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(v.getContext(),Activity2.class);
+                    i.putExtra("title", data.get(getAdapterPosition()));
+                    v.getContext().startActivity(i);
+                }
+            });
+            textTitle = itemView.findViewById(R.id.textTitle);
+            textDescription = itemView.findViewById(R.id.textDesc);
+        }
     }
 }
