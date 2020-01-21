@@ -1,6 +1,5 @@
 package com.example.recyclermyrequest9;
 
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,8 +35,8 @@ public class Adapter extends RecyclerView.Adapter<Holder> {
 
         holder.mTitle.setText(details.get(i).getTitle());
         holder.mDesc.setText(details.get(i).getDescription());
+        holder.mCircle.setImageResource(details.get(i).getCircle());
         holder.mImageView.setImageResource(details.get(i).getImg());
-
     }
 
     @Override

@@ -2,8 +2,9 @@ package com.example.recyclermyrequest9;
 
 public class Details {
 
-    private String title,description,description1;
-    private int img;
+    private String title,description;
+    private int img,circle;
+
 
     public String getTitle() {
         return title;
@@ -27,5 +28,12 @@ public class Details {
 
     public void setImg(int img) {
         this.img = img;
+    }
+    public int getCircle() {
+        return circle;
+    }
+
+    public void setCircle(int circle) {
+        this.circle = circle;
     }
 }
