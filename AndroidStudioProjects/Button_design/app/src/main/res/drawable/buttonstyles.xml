@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>@style/Widget.MaterialComponents.Button.UnelevatedButton"</item>
+    <item android:color="@color/colorCheck" android:state_checked="true">@style/Widget.MaterialComponents.CompoundButton.CheckBox</item>
+    <item android:color="@color/colorSwitch" android:state_checked="true">
+        @style/Widget.MaterialComponents.CompoundButton.Switch</item>
+     <item>@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    <item>@style/Widget.MaterialComponents.BottomAppBar</item>
+    <item>@style/Widget.MaterialComponents.BottomNavigationView</item>
+    <item>@style/Widget.MaterialComponents.Chip.Entry</item>
+    <item>@style/Widget.MaterialComponents.CompoundButton.RadioButton</item>
+    <item>?attr/materialButtonOutlinedStyle</item>
+</selector>
