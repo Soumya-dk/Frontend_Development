@@ -1,5 +1,4 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -7,5 +6,34 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="button_next" parent="Widget.MaterialComponents.Button">
+    <item name="cornerRadius">@dimen/rounded_corner_radius</item>
+    <item name="android:text">@string/button</item>
+    <item name="android:fontFamily">@font/roboto_bold</item>
+    <item name="backgroundTint">@color/buttonnext</item>
+    </style>
+    <style name="menu_bar" parent="Widget.MaterialComponents.AppBarLayout.Primary">
+        <item name="android:shadowColor">@color/shadow</item>
+        <item name="android:backgroundTint">@color/menubar</item>
+    </style>
+    <style name="back_textarea" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeWidth">@dimen/backtext</item>
+        <item name="cornerRadius">@dimen/corner</item>
+        <item name="strokeColor">@color/back</item>
+    </style>
+    <style name="circle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/buttonnext</item>
+        <item name="strokeWidth">@dimen/backtext</item>
+        <item name="color">@color/circle</item>
+    </style>
+    <style name="circle1" parent="Widget.MaterialComponents.TextView">
+        <item name="android:strokeColor">@color/circle</item>
+        <item name="strokeWidth">@dimen/backtext</item>
+    </style>
+    <style name="line" parent="Widget.MaterialComponents.TextView">
+        <item name="android:strokeColor">@color/circle</item>
+        <item name="strokeWidth">@dimen/backtext</item>
+        <item name="android:dashWidth">@dimen/line</item>
+        <item name="android:dashGap">@dimen/line</item>
+    </style>
 </resources>

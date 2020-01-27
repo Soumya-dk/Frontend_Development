@@ -11,21 +11,22 @@
         android:layout_height="match_parent"
         android:background="#FFFFFF"
         android:orientation="vertical">
-        <LinearLayout
+        <com.google.android.material.appbar.AppBarLayout
+            style="@style/menu_bar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/menubar"
+            android:layout_height="31dp"
             android:orientation="vertical">
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="20dp"
+                android:layout_width="23dp"
                 android:layout_height="20dp"
-                android:src="@drawable/menu">
+                android:layout_marginTop="6dp"
+                app:srcCompat="@drawable/menu">
             </com.google.android.material.imageview.ShapeableImageView>
-        </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FDFDFD"
+            android:backgroundTint="#FDFDFD"
             android:orientation="vertical"
             android:padding="20dp">
             <LinearLayout
@@ -37,7 +38,8 @@
                     android:layout_height="match_parent"
                     android:text="REQUISITION"
                     android:textColor="#000000"
-                    android:textSize="14dp">
+                    android:textSize="14dp"
+                    app:fontFamily="@font/roboto_medium">
                 </com.google.android.material.textview.MaterialTextView>
             </LinearLayout>
             <LinearLayout
@@ -45,23 +47,23 @@
                 android:layout_height="30dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal">
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
-                    app:background="@drawable/circle"
+                    style="@style/circle"
                     android:gravity="center"
                     android:text="1"
                     android:textColor="#ffffff">
-                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+                </com.google.android.material.textview.MaterialTextView>>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="31dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/line">
+                    style="@style/line">
                 </com.google.android.material.textview.MaterialTextView>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/circle1"
+                    style="@style/circle1"
                     android:gravity="center"
                     android:text="2"
                     android:textColor="#D3D3D3">
@@ -69,12 +71,12 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="31dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/line">
+                    style="@style/line">
                 </com.google.android.material.textview.MaterialTextView>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/circle1"
+                    style="style/circle1"
                     android:gravity="center"
                     android:text="3"
                     android:textColor="#D3D3D3">
@@ -82,12 +84,12 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="31dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/line">
+                    style="@style/line">
                 </com.google.android.material.textview.MaterialTextView>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/circle1"
+                    style="@style/circle1"
                     android:gravity="center"
                     android:text="4"
                     android:textColor="#D3D3D3">
@@ -95,12 +97,12 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="31dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/line">
+                    style="@style/line">
                 </com.google.android.material.textview.MaterialTextView>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/circle1"
+                    style="@style/circle1"
                     android:gravity="center"
                     android:text="5"
                     android:textColor="#D3D3D3">
@@ -108,12 +110,12 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="31dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/line">
+                   style="@style/line">
                 </com.google.android.material.textview.MaterialTextView>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/circle1"
+                     style="@style/circle1"
                     android:gravity="center"
                     android:text="6"
                     android:textColor="#D3D3D3">
@@ -127,7 +129,6 @@
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="3dp"
-                android:background="@drawable/line1"
                 android:layout_marginTop="4dp">
             </com.google.android.material.textview.MaterialTextView>
         </LinearLayout>
@@ -142,7 +143,8 @@
                 android:layout_marginTop="10dp"
                 android:text="NOTE"
                 android:textColor="#000000"
-                android:textSize="12dp">
+                android:textSize="12dp"
+                app:fontFamily="@font/roboto_medium">
             </com.google.android.material.textview.MaterialTextView>
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
@@ -150,15 +152,14 @@
                 android:layout_marginTop="10dp"
                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nMauris mattis, tortor sit amet tempor vehicula."
                 android:textColor="#747474"
-                android:textSize="10dp">
+                android:textSize="10dp"
+                app:fontFamily="@font/roboto">
             </com.google.android.material.textview.MaterialTextView>
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="230dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/textarea"
-                android:ems="10">
-            </com.google.android.material.textview.MaterialTextView>
+            <com.google.android.material.card.MaterialCardView
+                style="@style/back_textarea"
+                android:layout_width="260dp"
+                android:layout_height="66dp">
+            </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -169,8 +170,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="REQUEST TYPE"
+                android:textColor="#000000"
                 android:textSize="12dp"
-                android:textColor="#000000">
+                app:fontFamily="@font/roboto_medium">
             </com.google.android.material.textview.MaterialTextView>
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
@@ -178,7 +180,8 @@
                 android:layout_marginTop="10dp"
                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nMauris mattis, tortor sit amet tempor vehicula."
                 android:textColor="#747474"
-                android:textSize="10dp">
+                android:textSize="10dp"
+                app:fontFamily="@font/roboto">
             </com.google.android.material.textview.MaterialTextView>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -198,7 +201,8 @@
                         android:layout_height="wrap_content"
                         android:text="SELF"
                         android:textColor="#747474"
-                        android:textSize="12dp">
+                        android:textSize="12dp"
+                        app:fontFamily="@font/roboto">
                     </com.google.android.material.textview.MaterialTextView>
                 </LinearLayout>
                 <LinearLayout
@@ -214,7 +218,8 @@
                         android:layout_height="wrap_content"
                         android:text="TEAM / DEPARTMENT / BRANCH"
                         android:textColor="#747474"
-                        android:textSize="12dp">
+                        android:textSize="12dp"
+                        app:fontFamily="@font/roboto">
                     </com.google.android.material.textview.MaterialTextView>
                 </LinearLayout>
                 <LinearLayout
@@ -230,7 +235,8 @@
                         android:layout_height="wrap_content"
                         android:text="SOMEONE ELSE"
                         android:textColor="#747474"
-                        android:textSize="12dp">
+                        android:textSize="12dp"
+                        app:fontFamily="@font/roboto">
                     </com.google.android.material.textview.MaterialTextView>
                 </LinearLayout>
             </LinearLayout>
@@ -239,35 +245,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp">
-            <LinearLayout
+            android:padding="10dp"
+            android:layout_marginLeft="15dp">
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginLeft="15dp">
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SAVE DRAFT"
-                    android:textColor="#595959"
-                    android:textSize="10dp"
-                    android:textStyle="bold">
-                </com.google.android.material.textview.MaterialTextView>
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="62dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/line2">
-                </com.google.android.material.textview.MaterialTextView>
-            </LinearLayout>
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="25dp"
-                android:layout_marginLeft="100dp"
-                android:background="@drawable/button_next"
-                android:text="NEXT->"
-                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:text="SAVE DRAFT"
+                android:textColor="#595959"
                 android:textSize="10dp"
-                android:textStyle="bold">
+                android:textStyle="bold"
+                app:fontFamily="@font/roboto_bold">
+            </com.google.android.material.textview.MaterialTextView>
+            <com.google.android.material.button.MaterialButton
+                style="@style/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp">
             </com.google.android.material.button.MaterialButton>
         </LinearLayout>
     </LinearLayout>
