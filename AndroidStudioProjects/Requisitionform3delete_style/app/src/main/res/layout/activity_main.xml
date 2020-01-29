@@ -4,22 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/border">
+    tools:context=".MainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <RelativeLayout
+
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="@drawable/menubar">
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_alignParentLeft="true"
-                android:src="@drawable/menu">
-            </com.google.android.material.imageview.ShapeableImageView>
-        </RelativeLayout>
+            android:layout_height="20dp">
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,7 +44,6 @@
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:background="@drawable/circle1"
                     android:gravity="center"
                     android:text="1"
                     android:textColor="#D3D3D3"
@@ -57,8 +52,7 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="18dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/line">
+                    android:layout_marginLeft="20dp">
                 </com.google.android.material.textview.MaterialTextView>
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:layout_width="20dp"
@@ -67,14 +61,12 @@
                     android:gravity="center"
                     android:text="2"
                     android:textColor="#D3D3D3"
-                    android:textSize="10dp"
-                    android:background="@drawable/circle1">
+                    android:textSize="10dp">
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="25dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="57dp"
-                    android:background="@drawable/line">
+                    android:layout_marginLeft="57dp">
                 </com.google.android.material.textview.MaterialTextView>
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:layout_width="20dp"
@@ -83,14 +75,12 @@
                     android:gravity="center"
                     android:text="3"
                     android:textColor="#FFFFFF"
-                    android:textSize="10dp"
-                    android:background="@drawable/circle">
+                    android:textSize="10dp">
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="25dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="105dp"
-                    android:background="@drawable/line">
+                    android:layout_marginLeft="105dp">
                 </com.google.android.material.textview.MaterialTextView>
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:layout_width="20dp"
@@ -99,14 +89,12 @@
                     android:gravity="center"
                     android:text="4"
                     android:textColor="#D3D3D3"
-                    android:textSize="10dp"
-                    android:background="@drawable/circle1">
+                    android:textSize="10dp">
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="25dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="150dp"
-                    android:background="@drawable/line">
+                    android:layout_marginLeft="150dp">
                 </com.google.android.material.textview.MaterialTextView>
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:layout_width="20dp"
@@ -115,14 +103,12 @@
                     android:gravity="center"
                     android:text="5"
                     android:textColor="#D3D3D3"
-                    android:textSize="10dp"
-                    android:background="@drawable/circle1">
+                    android:textSize="10dp">
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="25dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="192dp"
-                    android:background="@drawable/line">
+                    android:layout_marginLeft="192dp">
                 </com.google.android.material.textview.MaterialTextView>
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:layout_width="20dp"
@@ -131,8 +117,7 @@
                     android:gravity="center"
                     android:text="6"
                     android:textColor="#D3D3D3"
-                    android:textSize="10dp"
-                    android:background="@drawable/circle1">
+                    android:textSize="10dp">
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
             </RelativeLayout>
         </RelativeLayout>
@@ -143,7 +128,6 @@
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
-                android:background="@drawable/line1"
                 android:layout_marginTop="4dp">
             </com.google.android.material.textview.MaterialTextView>
         </RelativeLayout>
@@ -175,14 +159,19 @@
                 android:textSize="10dp"
                 android:text="Lorem ipsum dolor sit amet, \nconsectetur adipiscing elit.">
             </com.google.android.material.textview.MaterialTextView>
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="64dp"
-                android:layout_height="20dp"
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                app:backgroundTint="@color/buttonnext"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/attach">
-            </com.google.android.material.imageview.ShapeableImageView>
+                app:srcCompat="@drawable/ic_attach_file_black_24dp"
+                app:fabCustomSize="20dp"
+                app:maxImageSize="10dp"
+                app:tint="@color/white" />
+
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -194,27 +183,16 @@
                 android:textColor="#505050">
             </com.google.android.material.textview.MaterialTextView>
         </RelativeLayout>
-        <RelativeLayout
+
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="175dp">
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="match_parent"
-                android:layout_height="4dp"
-                android:background="@drawable/line1"
-                android:layout_marginTop="4dp">
-            </com.google.android.material.textview.MaterialTextView>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginTop="200dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp">
             <RelativeLayout
                 android:layout_width="200dp"
-                android:layout_height="50dp"
-                android:background="@drawable/border1">
+                android:layout_height="50dp">
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="250dp"
                     android:layout_height="30dp"
@@ -243,7 +221,6 @@
                     android:layout_height="30dp"
                     android:layout_marginTop="30dp"
                     android:paddingLeft="10dp"
-                    android:background="@drawable/border1"
                     android:textColor="#747474"
                     android:textSize="10dp"
                     android:text="Lorem ipsum dolor sit amet, consectetur…">
@@ -252,30 +229,30 @@
             <RelativeLayout
                 android:layout_width="60dp"
                 android:layout_height="50dp"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/border1">
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="70dp"
-                    android:layout_height="30dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="10dp"
-                    android:paddingLeft="16dp"
-                    android:paddingTop="4dp"
-                    android:layout_marginRight="12dp"
-                    android:src="@drawable/delete">
-                </com.google.android.material.imageview.ShapeableImageView>
+                android:layout_alignParentRight="true">
+
             </RelativeLayout>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="wrap_content"
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                app:backgroundTint="@color/buttonnext"
+                app:fabCustomSize="30dp"
+                app:maxImageSize="10dp"
+                app:srcCompat="@drawable/ic_delete_black_24dp"
+                app:tint="@color/white" />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="260dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp">
             <RelativeLayout
                 android:layout_width="200dp"
-                android:layout_height="50dp"
-                android:background="@drawable/border1">
+                android:layout_height="50dp">
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="250dp"
                     android:layout_height="30dp"
@@ -287,24 +264,24 @@
                     android:text="abc003745gb9023.doc"
                     android:textSize="10dp">
                 </com.google.android.material.textview.MaterialTextView>
+
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="250dp"
                     android:layout_height="30dp"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="0dp"
+                    android:layout_marginRight="4dp"
                     android:ems="20"
                     android:paddingLeft="150dp"
                     android:paddingTop="4dp"
                     android:text="988 KB"
                     android:textColor="#595959"
-                    android:textSize="10dp">
-                </com.google.android.material.textview.MaterialTextView>
+                    android:textSize="10dp"></com.google.android.material.textview.MaterialTextView>
+
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="300dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="30dp"
                     android:paddingLeft="10dp"
-                    android:background="@drawable/border1"
                     android:textColor="#747474"
                     android:textSize="10dp"
                     android:text="Lorem ipsum dolor sit amet, consectetur…">
@@ -313,20 +290,21 @@
             <RelativeLayout
                 android:layout_width="60dp"
                 android:layout_height="50dp"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/border1">
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="70dp"
-                    android:layout_height="30dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="10dp"
-                    android:paddingLeft="16dp"
-                    android:paddingTop="4dp"
-                    android:layout_marginRight="12dp"
-                    android:src="@drawable/delete">
-                </com.google.android.material.imageview.ShapeableImageView>
+                android:layout_alignParentRight="true">
+
             </RelativeLayout>
-        </RelativeLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                app:backgroundTint="@color/buttonnext"
+                app:fabCustomSize="30dp"
+                app:maxImageSize="10dp"
+                app:srcCompat="@drawable/ic_delete_black_24dp"
+                app:tint="@color/white" />
+        </com.google.android.material.card.MaterialCardView>
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -346,20 +324,23 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/line2">
+                android:layout_marginLeft="10dp">
             </com.google.android.material.textview.MaterialTextView>
+
             <com.google.android.material.button.MaterialButton
+                style="@style/button_next"
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/button_next"
-                android:text="NEXT->"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="283dp"
                 android:textColor="#FFFFFF"
                 android:textSize="10dp"
-                android:textStyle="bold">
+                app:icon="@drawable/ic_arrow_forward_black_24dp"
+                app:iconGravity="end"
+                app:iconSize="13dp">
+
             </com.google.android.material.button.MaterialButton>
         </RelativeLayout>
     </RelativeLayout>
-</RelativeLayout>

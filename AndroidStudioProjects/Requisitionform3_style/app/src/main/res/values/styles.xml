@@ -7,5 +7,17 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="button_next" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">@dimen/rounded_corner_radius</item>
+        <item name="android:text">@string/button</item>
+        <item name="backgroundTint">@color/buttonnext</item>
+    </style>
+    <style name="menu_bar" parent="Widget.MaterialComponents.AppBarLayout.Surface">
+        <item name="android:shadowColor">@color/shadow</item>
+        <item name="backgroundTint">@color/menubar</item>
+    </style>
+    <style name="border_text" parent="Widget.MaterialComponents.TextView">
+        <item name="strokeColor">@color/border</item>
+        <item name="strokeWidth">@dimen/border_size</item>
+    </style>
 </resources>
