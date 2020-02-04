@@ -13,6 +13,7 @@ import static com.example.jsondynamic.MainActivity.EXTRA_CREATOR;
 import static com.example.jsondynamic.MainActivity.EXTRA_LIKES;
 import static com.example.jsondynamic.MainActivity.EXTRA_URL;
 
+
 public class Activity2 extends AppCompatActivity {
 
     @Override

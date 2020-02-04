@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.Set;
+
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ExampleViewHolder> {
     private Context mContext;
@@ -51,7 +51,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ExampleViewHolder> {
         holder.mTextViewCreator.setText(creatorName);
         holder.mTextViewLikes.setText("Likes:" +likeCount);
         Picasso.with(mContext).load(imageUrl).fit().centerInside().into(holder.mImageView);
-
 
     }
 
