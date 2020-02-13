@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,35 +13,46 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Adapter extends RecyclerView.Adapter<Holder> {
+public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
-    Context c;
+    Context context;
     ArrayList<Details> details;
 
-    public Adapter(Context c, ArrayList<Details> details) {
-        this.c = c;
+    public Adapter(Context context, ArrayList<Details> details) {
         this.details = details;
+        this.context = context;
     }
 
     @NonNull
     @Override
-    public Holder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
-
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.card,null);
-        return new Holder(view);
+    public Adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view= android.view.LayoutInflater.from(parent.getContext()).inflate(R.layout.card,null);
+        ViewHolder viewHolder=new ViewHolder(view);
+        return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Holder holder, int i) {
+    public void onBindViewHolder(@NonNull Adapter.ViewHolder holder, int position) {
+        holder.imageView.setImageResource((details.get(position).getImage()));
 
-        holder.mTitle.setText(details.get(i).getTitle());
-        holder.mDesc.setText(details.get(i).getDescription());
-        holder.mCircle.setImageResource(details.get(i).getCircle());
-        holder.mImageView.setImageResource(details.get(i).getImg());
+        holder.textView.setText(details.get(position).getName());
     }
 
     @Override
     public int getItemCount() {
-        return details.size();
+        return 0;
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder{
+
+
+        ImageView imageView;
+        TextView textView;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            imageView=itemView.findViewById(R.id.circletv);
+            textView=itemView.findViewById(R.id.desctv);
+        }
     }
 }

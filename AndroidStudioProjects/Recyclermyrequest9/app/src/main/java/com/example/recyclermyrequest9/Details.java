@@ -2,38 +2,29 @@ package com.example.recyclermyrequest9;
 
 public class Details {
 
-    private String title,description;
-    private int img,circle;
+    private int Image;
+    private String Name;
 
-
-    public String getTitle() {
-        return title;
+    public Details(int image, String name) {
+        Image = image;
+        Name = name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+
+
+    public int getImage() {
+        return Image;
     }
 
-    public String getDescription() {
-        return description;
+    public void setImage(int image) {
+        Image = image;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public String getName() {
+        return Name;
     }
 
-    public int getImg() {
-        return img;
-    }
-
-    public void setImg(int img) {
-        this.img = img;
-    }
-    public int getCircle() {
-        return circle;
-    }
-
-    public void setCircle(int circle) {
-        this.circle = circle;
+    public void setName(String name) {
+        Name = name;
     }
 }
