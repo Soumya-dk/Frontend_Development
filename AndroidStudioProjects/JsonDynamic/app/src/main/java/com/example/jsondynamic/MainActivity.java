@@ -7,10 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.Response.ErrorListener;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
@@ -25,10 +27,11 @@ public class MainActivity extends AppCompatActivity implements Adapter.OnItemCli
     public static final String EXTRA_URL = "imageUrl";
     public static final String EXTRA_CREATOR = "creatorName";
     public static final String EXTRA_LIKES = "likeCount";
+    public static final String EXTRA_COMMENTS = "comments";
 
     private RecyclerView mRecyclerView;
     private Adapter mAdapter;
-    private ArrayList<Exampleitem> mExampleList;
+    private ArrayList<MovieDetails> mMovieDetails;
     private RequestQueue mRequestQueue;
 
 
@@ -41,10 +44,13 @@ public class MainActivity extends AppCompatActivity implements Adapter.OnItemCli
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        mExampleList = new ArrayList<>();
+
+        mMovieDetails = new ArrayList<>();
 
         mRequestQueue = Volley.newRequestQueue(this);
         parseJSON();
+
+
     }
 
     private void parseJSON() {
@@ -58,20 +64,19 @@ public class MainActivity extends AppCompatActivity implements Adapter.OnItemCli
                         try {
                             JSONArray jsonArray = response.getJSONArray("hits");
 
-                            for (int i = 0; i<jsonArray.length();i++){
+                            for (int i = 0; i < jsonArray.length(); i++) {
                                 JSONObject hit = jsonArray.getJSONObject(i);
 
-                                String creatorName = hit.getString( "user");
+
+                                String creatorName = hit.getString("user");
                                 String imageUrl = hit.getString("webformatURL");
                                 int likeCount = hit.getInt("likes");
-
-                                mExampleList.add(new Exampleitem(imageUrl, creatorName, likeCount));
+                                String comments = hit.getString("comments");
+                                mMovieDetails.add(new MovieDetails(imageUrl, creatorName, likeCount, comments));
                             }
-
-                            mAdapter = new Adapter(MainActivity.this,mExampleList);
+                            mAdapter = new Adapter(MainActivity.this,mMovieDetails);
                             mRecyclerView.setAdapter(mAdapter);
                             mAdapter.setOnItemClickListener(MainActivity.this);
-
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -90,11 +95,12 @@ public class MainActivity extends AppCompatActivity implements Adapter.OnItemCli
     @Override
     public void onItemClick(int position) {
         Intent activity_2Intent = new Intent(this, Activity2.class);
-        Exampleitem clickedItem = mExampleList.get(position);
+        MovieDetails clickedItem = mMovieDetails.get(position);
 
         activity_2Intent.putExtra(EXTRA_URL, clickedItem.getImageUrl());
         activity_2Intent.putExtra(EXTRA_CREATOR, clickedItem.getCreator());
         activity_2Intent.putExtra(EXTRA_LIKES, clickedItem.getLikeCount());
+        activity_2Intent.putExtra(EXTRA_COMMENTS, clickedItem.getComments());
 
         startActivity(activity_2Intent);
     }
