@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-<div id="parent"></div>
-
-<script>
 var ajaxRequest = new XMLHttpRequest();
 ajaxRequest.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -18,12 +12,13 @@ ajaxRequest.onreadystatechange = function() {
 
   var card=document.createElement("div");
   cont.appendChild(card);
-  cont.style="background:#FFF456";
+  card.style="border-bottom:0.25px solid #ffffff";
+  card.style="background:#EB32C8;margin:20px";
 
   var image = document.createElement("img");
   card.appendChild(image);
   image.src= info[i].webformatURL;
-  image.style="width:150px;";
+  image.style="width:150px;float:left;width:15%;padding:1%";
 
   
   var text = document.createElement("div");
@@ -41,6 +36,9 @@ ajaxRequest.onreadystatechange = function() {
   );
   ajaxRequest.send();
 
-</script>
-</body>
-</html>
+  function myFunction()
+  {
+    window.location.replace("Soumya_HTML_js_json_movienext.html");
+    
+  }
+   
