@@ -26,33 +26,33 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @NonNull
     @Override
     public Adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= android.view.LayoutInflater.from(parent.getContext()).inflate(R.layout.card,null);
+        View view= android.view.LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view,null);
         ViewHolder viewHolder=new ViewHolder(view);
         return viewHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull Adapter.ViewHolder holder, int position) {
-        holder.imageView.setImageResource((details.get(position).getImage()));
+        holder.imageView.setBackgroundResource((details.get(position).getImage()));
 
         holder.textView.setText(details.get(position).getName());
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return details.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
 
-        ImageView imageView;
+        TextView imageView;
         TextView textView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView=itemView.findViewById(R.id.circletv);
-            textView=itemView.findViewById(R.id.desctv);
+            imageView=itemView.findViewById(R.id.circle_drawable);
+            textView=itemView.findViewById(R.id.text_status);
         }
     }
 }

@@ -4,118 +4,106 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF">
-
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="110dp"
             android:background="#FFFFFF"
             android:orientation="horizontal">
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:orientation="vertical">
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
                     <TextView
-                        android:id="@+id/titletv"
+                        android:id="@+id/text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="PUR - 2019 - 056"
                         android:textColor="#595959"
                         android:textSize="12dp"
-                        android:textStyle="bold"></TextView>
+                        android:textStyle="bold">
+                    </TextView>
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Submitted on"
                         android:textColor="#909090"
-                        android:textSize="10dp"></TextView>
+                        android:textSize="10dp">
+                    </TextView>
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="06 Jul 2019"
                         android:textColor="#595959"
                         android:textSize="12dp"
-                        android:textStyle="bold"></TextView>
+                        android:textStyle="bold">
+                    </TextView>
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal">
-
                     <TextView
-                        android:id="@+id/circletv"
-                        android:layout_width="20dp"
-                        android:layout_height="15dp"
+                        android:id="@+id/circle_drawable"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/approved"></TextView>
-
+                        android:background="@drawable/approved">
+                    </TextView>
                     <TextView
-                        android:id="@+id/desctv"
+                        android:id="@+id/text_status"
                         android:layout_width="208dp"
                         android:layout_height="wrap_content"
-                        android:text="APPROVED"
+                        android:textSize="10dp"
                         android:textColor="#5A5A5A"
-                        android:textSize="10dp"></TextView>
+                        android:text="APPROVED">
+                    </TextView>
                 </LinearLayout>
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
                 <ImageView
-                    android:id="@+id/imagetv"
                     android:layout_width="24dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="30dp"
-                    android:src="@drawable/bell"></ImageView>
+                    android:src="@drawable/bell">
+                </ImageView>
             </LinearLayout>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:orientation="vertical">
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="4dp"
-                android:background="@drawable/line">
-
+                android:background="@drawable/line"
+                android:layout_marginTop="4dp">
             </TextView>
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
