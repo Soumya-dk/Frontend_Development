@@ -18,8 +18,8 @@ ajaxRequest.onreadystatechange = function() {
   var image = document.createElement("img");
   card.appendChild(image);
   image.src= info[i].webformatURL;
-  image.style="width:150px;";
   image.style="width:150px;float:left;width:15%;padding:1%";
+
 
   
   var text = document.createElement("div");
@@ -27,20 +27,23 @@ ajaxRequest.onreadystatechange = function() {
   text.innerHTML = info[i].user;
   text.style="clear:both;margin-left:20%";
 
- 
-
   
-   }
+  var button = document.createElement("div");
+  card.appendChild(button);
+  button.id="btn";
+  button.innerHTML="Button"
+  button.style="padding:1%;width:10%;background:#FFFF5F";
+  button.onclick= function myFunction(){
+   window.location.replace("Soumya_HTML_js_json_movielocalnext.html");
   }
+ 
+}
+}
   };
 
    ajaxRequest.open(
-    "GET","Movie.json",true
+    "GET","Movielocal.json",true
   );
   ajaxRequest.send();
 
-  function myFunction()
-  {
-    window.location.replace("Soumya_HTML_js_json_movielocalnext.html")
-  }
-   
+  

@@ -18,9 +18,7 @@ ajaxRequest.onreadystatechange = function() {
   var image = document.createElement("img");
   card.appendChild(image);
   image.src= info[i].webformatURL;
-  image.style="width:150px;";
   image.style="width:150px;float:left;width:15%;padding:1%";
-
 
   
   var text = document.createElement("div");
@@ -45,7 +43,7 @@ ajaxRequest.onreadystatechange = function() {
   };
 
    ajaxRequest.open(
-    "GET","Movie.json",true
+    "GET","Movielocal.json",true
   );
   ajaxRequest.send();
    
