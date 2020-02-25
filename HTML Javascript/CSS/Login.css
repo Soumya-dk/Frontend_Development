@@ -1,0 +1,16 @@
+#underline-gap {
+    text-decoration: underline;
+    text-underline-position: under;
+    
+  }
+  .textfont {
+        text-align: left;
+        font: Bold 14px/16px Calibri;
+        letter-spacing: 0.9px;
+        color: #505050;
+        opacity: 1;
+  }
+  .errorhide{
+      display: none;
+  }
+  
