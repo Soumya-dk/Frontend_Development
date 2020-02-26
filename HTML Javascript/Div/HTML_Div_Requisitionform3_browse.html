@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">     
+<head>
+    <link rel="stylesheet" href="../CSS/Requisitionform1.css">
+    <script src="../JS/Requisitionfrom1.js"></script> 
+           
+</head>
+<body>
+    <div style="background: #F6F8F9 0% 0% no-repeat padding-box;">
+            <div style="background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 4px #00000029;padding: 0.5%;">
+                    <div>
+                            <div style="display: inline-block;"> <img src="../Images/menu.png" alt="menu"style= "width:30px ;height: 20;"></div>
+                            <div style="display: inline-block;margin-left: 87%;"><img src="../Images/profile.jpg" alt="profile" style="width:30px ;height: 20; border-radius:20px;" ></div>
+                            <div style="display: inline-block"> <p class="textfont">John Doe</p></div>
+                            <div style="display: inline-block;"> <img src="../Images/drop.png"alt="drop"style="width:10px ;height: 10px;"> </div>
+                        </div>
+            </div>
+            <div style="background: #F6F8F9 0% 0% no-repeat padding-box;padding: 20px;box-shadow: 0px 0px 6px #00000034;">
+                    <div style="box-shadow: 0px 0px 6px #00000034;background: #FFFFFF 0% 0% no-repeat padding-box;
+                    background: #FCFCFC 0% 0% no-repeat padding-box;"class="row">
+                
+                            <div  style="background:#FFFFFF 0% 0% no-repeat padding-box;display: inline-block;"class="column">
+                            <div> <h6 id="trans" style="font: Bold 14px/67px calibri;">REQUISITION</h6></div>
+                            <div>  <span class="step" id="trans1" class="textfont">1</span></div>
+                            <div style="padding: 9%;"> <hr id="trans2"></div>
+                            <div>  <span class="step" id="trans1" class="textfont">2</span></div>
+                            <div style="padding: 9%;"><hr id="trans2"></div>
+                            <div> <span class="step" class="textfont" id="trans1"style="background: #32BDD2 0% 0% no-repeat padding-box;
+                                color: #FFFFFF;">3</span></div>
+                            <div style="padding: 9%;"><hr id="trans2"></div>
+                            <div><span class="step" id="trans1" class="textfont">4</span></div>
+                            <div style="padding: 9%;"><hr id="trans2"></div>
+                            <div> <span class="step" id="trans1" class="textfont">5</span></div>
+                            <div style="padding: 9%;"> <hr id="trans2"></div>
+                            <div><span class="step" id="trans1" class="textfont">6</span></div>
+                            </div>
+                            
+                            <div style="background: #FCFCFC 0% 0% no-repeat padding-box; 
+                            display:inline-block;"class="column1">
+                            <div style="padding-top:1%;margin-left:3%;padding-right:5%">
+                                <div style="background:#F0F0F0;padding-top:2%;">
+                                    <div style="display: inline-block;padding-left: 2%;">
+                                        <p style="font-size:14px;"class="textfont">ATTACHMENTS</p>
+                                        <p style="font-size:12px;color:#747474"class="textfont">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+    
+                                <div style="background:#FFFFFF;padding-top:1%;padding-left:10%;padding-right: 10%;padding-bottom: 4%;">
+                                    <div style="border: 1px solid #D5E2E8;margin-top: 1%">
+                                        <div style="display: inline-block;margin-left: 2%">
+                                            <span class="textfont">Select a file from my computer.</span> <br>
+                                            <span class="textfont">Maximum allowed size is 5MB per file. Only documents like</span><br>
+                                            <span class="textfont"style="padding-top: 10%;">pdf, docx, ppt, xls etc are allowed.</span>
+                                            <span class="textfont"style="padding-top: 10%;">
+                                         <button onclick="Browse()"id="browsebtn"name="BROWSE" style="background: #32BDD2;border: none; font: 12px/14px Roboto;
+                                         box-shadow: 1px 1px 5px #00000040;border-radius: 4px; margin-right:60%;width: 18%;height: 35px; 
+                                         color:white"class="textfont">BROWSE </button>
+                                        </span>
+                                        </div>
+                                        <div style="display: inline-block;background: #32BDD2 0% 0% no-repeat padding-box;width:51%;">
+                                            <p class="dotted" style="margin-left: 5%; margin-right: 5%;border: 2px dashed #FFFFFF;
+                                            border-radius: 4px;"><img src="../Images/dropfile.png" style="width:20%;padding-left: 40%;">
+                                            <span style="margin-left: 31.90%;color:#FFFFFF ;"class="textfont">Drop a here file</span></p>
+                                        </div>
+                                       </div>
+                                       <div class="menuhide" style="border: 1px solid #DFEBEF;">
+                                           <div style="display: inline-block;width:80%">
+                                               <div style="background: #E0E0E0 0% 0% no-repeat padding-box;
+                                               border-radius: 4px;margin-top: 1%;margin-left: 0.5%;">
+                                                   <div style="display: inline-block;padding-left: 2%;">
+                                                    <p class="textfont">abc0037429023.doc</p>
+                                                   </div>
+                                                   <div style="display: inline-block;padding-left:60% ;">
+                                                    <p class="textfont">976KB</p>
+                                                </div>
+                                               </div>
+                                               <div style="border: 1px solid #DFEBEF;margin-top: 1%;padding-left: 2%;margin-left: 0.5%;">
+                                                <p class="textfont" style="border: 1px #B5B5B5;">
+                                                    Write the description...
+                                                    </p>
+                                            </div>
+    
+                                           </div>
+                                           <div style="display: inline-block;border: 1px solid #DFEBEF;width: 19%;padding-top: 6%;">
+                                            <button onclick="Upload()"name="UPLOAD" style="background: #32BDD2;border: none; font: 12px/14px Roboto;
+                                            box-shadow: 1px 1px 5px #00000040;border-radius: 29px;
+                                             margin-left:30%;width: 38%;height: 35px; color:white;margin-bottom: 8%;"class="textfont">UPLOAD</button> 
+                                           </div>
+                                       </div>
+                                       <div class="menuhide"style="border: 1px solid #DFEBEF; background: #FFF5F5 0% 0% no-repeat padding-box;margin-right: 20%;">
+                                           <div style="display: inline-block;">
+                                            <img src="../Images/warning.png"style="width:20px; height:20px;">
+                                           </div>
+                                           <div style="display: inline-block;">
+                                            <span class="textfont">This field is required</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   
+                               <div>
+                                <div id="underline-gap" style="display: inline-block;margin-left: 3%;">
+                                    <p class="textfont">SAVE DRAFT</p>
+                                </div>
+                                <div  id="underline-gap" style="color: #32BDD2;display: inline-block;margin-left: 75%;">
+                                    <p class="textfont"style="color: #32BDD2;">BACK</p>
+                                 </div>
+                                <div style="display: inline-block;margin-left: 2%;">
+                                    <button name="NEXT" style="background: #32BDD2;border: none; font: 12px/14px calibri;
+                                    box-shadow: 1px 1px 5px #00000040;border-radius: 21px;
+                                     height: 35px; color:white"class="textfont">NEXT -></button>
+                                </div>
+                            </div>
+                         </div>
+                        </div>
+            </div>    
+    </div>
+    </body>
+    <html>
