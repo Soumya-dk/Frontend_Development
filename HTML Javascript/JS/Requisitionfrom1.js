@@ -20,12 +20,32 @@ function Backupload(){
     window.location.replace("HTML_Div_Requisitionform2_items.html");
 }
 function Upload(){
+    window.location.replace("HTML_Div_Requisitionform3_upload.html");
+}
+function Uploadnext(){
     window.location.replace("HTML_Div_Requisitionform4_invitepeople.html");
 }
 function Addpeople(){
     window.location.replace("HTML_Div_Addpeople19_search.html");
 }
-
+function search(){
+    window.location.replace("HTML_Div_Addpeople25_noresult.html");
+}
+function noresults(){
+    window.location.replace("HTML_Div_Addpeople26_resultfound.html");
+}
+function results(){
+    window.location.replace("HTML_Div_Addpeople24_personfound.html");
+}
+function nextinvite(){
+    window.location.replace("HTML_Div_Requisitionform5_approval.html");
+}
+function approved(){
+    window.location.replace("HTML_Div_Myrequest7.html");
+}
+function clearrequest(){
+    window.location.replace("HTML_Div_Myrequest9.html");
+}
 function popup(l,k) {
     var container = document.getElementById("l");
     var popup = document.getElementById("k");
@@ -42,7 +62,21 @@ function popup(l,k) {
     }
   }
     
-
+  function popuprequest(l,k) {
+    var container = document.getElementById("l");
+    var popuprequest = document.getElementById("k");
+    if (popuprequest.style.display === "none") {
+      container.style.position = "relative";
+      popuprequest.style.position = "absolute";
+      popuprequest.style.display = "block";
+      popuprequest.style.top = "60%";
+      popuprequest.style.left = "2%";
+      popuprequest.style.zIndex = "1";
+    } else {
+      container.style.position = "initial";
+      popuprequest.style.display = "none";
+    }
+  }
 function Browse(){
     var browse=document.getElementById("browsebtn");
     var hideinput=document.getElementsByClassName("menuhide");
