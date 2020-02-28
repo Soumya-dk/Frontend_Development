@@ -16,3 +16,19 @@ function LoginButton(){
 function Forgotpassword(){
     window.location.replace("HTML_Div_ForgotPassword.html");
 }
+function clearrequest(){
+    window.location.replace("HTML_Div_Myrequest9.html");
+}
+
+function Loginrequest(){
+    if(document.getElementById("dis").style.display === "none" ){
+        LoginButton();
+    }
+   else{
+      Requestnext();
+   }
+    
+}
+function Requestnext(){
+    window.location.replace("HTML_Div_Myrequest9.html");
+}

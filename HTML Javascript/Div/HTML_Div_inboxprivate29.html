@@ -2,7 +2,8 @@
 <html>
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">     
 <head>
-    <link rel="stylesheet" href="../CSS/inbox.css">            
+    <link rel="stylesheet" href="../CSS/inbox.css">   
+    <script src="../JS/Requisitionfrom1.js"></script>         
 </head>
 <body>
 <div style="background: #F6F8F9 0% 0% no-repeat padding-box;">
@@ -25,7 +26,7 @@
                         class="column">
                         <div style="top: 100px; left: 25px; width: 58px;height: 60px;background: #245070;border-radius: 15px 0px 0px 0px;padding: 10%;">
                             <img src="../Images/backarrow.png" alt="arrow"style="width:40%;padding-left:18%;padding-top:17%"></div>
-                        <div>
+                        <div onclick="awaiting()">
                              <img src="../Images/homepublic.png" alt="arrow"style="width:65%;padding-left:18%;padding-top:50%"></div>
                         <div style="border-right: 5px solid #E6AF2E;padding: 10%;"><img src="../Images/mailpublic.png" alt="arrow"style="width:60%;padding-left:18%;padding-top:50%"></div>
                         <div><img src="../Images/calenderview.png" alt="arrow"style="width:50%;padding-left:18%;padding-top:50%"></div>
@@ -49,7 +50,7 @@
         <div>
             <button name="submit" style=" width:150px;height: 35px;border-radius:10px;margin-left:20px;border: 0.5px solid #245070;
             border-radius: 7px;background:#FFFFFF;text-align: center;font: Bold 12px/14px Roboto;letter-spacing: 1.2px;color: #245070;;border-radius: 7px;">PUBLIC</button>
-            <button name="submit" onclick="public()" style="background: #245070 0% 0% no-repeat padding-box;border: 0.5px solid #245070;border-radius: 7px;;width:150px;height: 35px;
+            <button name="submit" onclick="requestview()" style="background: #245070 0% 0% no-repeat padding-box;border: 0.5px solid #245070;border-radius: 7px;;width:150px;height: 35px;
             border-radius:10px;text-align: center;font: Bold 12px/14px Roboto;letter-spacing: 1.2px;color: #FFFFFF;opacity: 1;;margin-left:50px;">PRIVATE</button></div>
                 </div>
             </div>

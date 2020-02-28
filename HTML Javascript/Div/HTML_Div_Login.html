@@ -15,7 +15,7 @@
         <div style="width:100%">
             <div>
              <div style="box-shadow: 0px 0px 10px #00000029; padding:25px;border-radius: 20px;">
-             <div style="width:50%;margin-left:25%;">
+             <div style="width:50%;margin-left:30%;">
                  <div>
                   <div style=" padding:60px;">
                     <div id="underline-gap">
@@ -40,13 +40,13 @@
                 </div>
                 <div style="width:100%">
                    <div>
-                      <div style="border:solid white;">
+                    <div style="border:solid white;">
                     <p class="textfont"style="margin-left: 5px;font: Regular 12px/14px Roboto;">Password</p>
                     <div style="width:100%">
                         <div>
                         <div style="border:solid white;">
                         <input type="text" name="Password" placeholder="******" size="47"  style="border:1px solid #D3D3D3 ;border-radius:3px;">
-                    <div class="errorhide">
+                    <div id="dis" class="errorhide" style="display: none;">
                         <img src="../Images/warning.png"style="width:20px; height:20px;"> 
                         <span class="textfont"style="color:#BF574A">This field is required</span>
                     </div>    
@@ -75,7 +75,9 @@
             <div>
              <div style="margin-top: 50px;">
              <div style="border: 1px 1px 5px  #00000040;">
-                <button onclick="LoginButton()" id="loginbutton" name="Login" style="background: #32BDD2;border: none; font: 12px/14px Roboto;box-shadow: 1px 1px 5px #00000040;border-radius: 21px; width: 20%;height: 42px; color:white">LOGIN</button>
+                <button onclick="Loginrequest()" id="loginbutton" name="Login" style="background: #32BDD2;border: none; 
+                font: 12px/14px Roboto;box-shadow: 1px 1px 5px #00000040;border-radius: 21px; width: 20%;height: 42px; 
+                color:white">LOGIN</button>
              </div>
              </div>
             </div>

@@ -46,6 +46,21 @@ function approved(){
 function clearrequest(){
     window.location.replace("HTML_Div_Myrequest9.html");
 }
+function approval(){
+    window.location.replace("HTML_Div_Requisitionform6_preview.html");
+}
+function preview(){
+    window.location.replace("HTML_Div_Requisitionform5_approval.html");
+}
+function awaiting(){
+    window.location.replace("HTML_Div_Requestview27.html");
+}
+function requestview(){
+    window.location.replace("HTML_Div_inboxpublic28.html");
+}
+function private(){
+    window.location.replace("HTML_Div_inboxprivate29.html");
+}
 function popup(l,k) {
     var container = document.getElementById("l");
     var popup = document.getElementById("k");
@@ -80,16 +95,12 @@ function popup(l,k) {
 function Browse(){
     var browse=document.getElementById("browsebtn");
     var hideinput=document.getElementsByClassName("menuhide");
-
     for(var i=0;i!=hideinput.length;i++){
         if(browse.click){
             hideinput[i].style.display="block";
-
         }
         else{
             hideinput[i].style.display="none";
         }
     }
-    
 }
-
