@@ -12,31 +12,31 @@ ajaxRequest.onreadystatechange = function() {
 
   var card=document.createElement("div");
   cont.appendChild(card);
-  card.style="border-bottom:0.25px solid #ffffff";
-  card.style="background:#EB32C8;margin:20px";
+  card.style="border-bottom:0.25px solid #ffffff;display:inline-block";
+  card.style="background:#EB32C8;margin:20px;height:20vh";
 
   var image = document.createElement("img");
   card.appendChild(image);
   image.src= info[i].webformatURL;
-  image.style="width:150px;float:left;width:15%;padding:1%";
+  image.style="float:left;width:10vw;height:10vh;padding:1%;;display:inline-block";
 
   
   var text = document.createElement("div");
   card.appendChild(text);
   text.innerHTML = info[i].user;
-  text.style="float:left";
+  text.style="float:left;display:inline-block";
 
-  var button = document.createElement("div");
+  var button = document.createElement("button");
   card.appendChild(button);
   button.id="btn";
   button.innerHTML="Button"
-  button.style="padding:1%;width:6%;height:10%;background:#FFFF5F";
+  button.style="padding:2%;width:10vw;height:3vh;background:#FFFF5F;float:right";
   button.onclick= function myFunction(){
    window.location.replace("Soumya_HTML_js_json_movienext.html");
   }
  }
 }
-  };
+};
 
    ajaxRequest.open(
     "GET","https://pixabay.com/api/?key=5303976-fd6581ad4ac165d1b75cc15b3&q=movie&image_type=photo&pretty=true",true

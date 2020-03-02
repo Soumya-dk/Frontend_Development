@@ -10,36 +10,33 @@ ajaxRequest.onreadystatechange = function() {
 
   for(i=0;i<info.length;i++){
 
-  var card=document.createElement("div");
-  cont.appendChild(card);
-  cont.style="background:#EC3E45;margin:20px";
-  card.style="border-bottom:0.25px solid #ffffff";
-
-
-  var image = document.createElement("img");
-  card.appendChild(image);
-  image.src= info[i].webformatURL;
-  image.style="width:150px;float:left;width:15%;padding:1%";
-
+    var card=document.createElement("div");
+    cont.appendChild(card);
+    card.style="border-bottom:0.25px solid #ffffff;display:inline-block";
+    card.style="background:#EB356C;margin:20px;height:20vh";
   
-  var text = document.createElement("div");
-  card.appendChild(text);
-  text.innerHTML = info[i].user;
-  text.style="clear:both;margin-left:20%";
-
-  var text = document.createElement("div");
-  card.appendChild(text);
-  text.innerHTML = info[i].tags;
-  text.style="clear:both;margin-left:20%";
-
-  var text = document.createElement("div");
-  card.appendChild(text);
-  text.innerHTML = info[i].type;
-  text.style="clear:both;margin-left:20%";
-
-
+    var image = document.createElement("img");
+    card.appendChild(image);
+    image.src= info[i].webformatURL;
+    image.style="float:left;width:10vw;height:16vh;padding:1%;;display:inline-block";
   
-   }
+    
+    var text = document.createElement("div");
+    card.appendChild(text);
+    text.innerHTML = info[i].user;
+    text.style="float:left;display:inline-block";
+  
+
+    var text =document.createElement("div");
+    card.appendChild(text);
+    text.innerHTML = info[i].tags;
+    text.style="padding:2%";
+
+    var text = document.createElement("div");
+    card.appendChild(text);
+    text.innerHTML = info[i].type;
+
+  }
   }
   };
 

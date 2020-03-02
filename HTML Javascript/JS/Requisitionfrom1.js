@@ -104,3 +104,18 @@ function Browse(){
         }
     }
 }
+function Readmore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("menuhide");
+    var lessText = document.getElementById("moreread");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      lessText.innerHTML = "READ MORE"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      lessText.innerHTML = "READ LESS"; 
+      moreText.style.display = "inline";
+    }
+  }
