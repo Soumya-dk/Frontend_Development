@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html >
+<head>
+    
+    <style>
+
+
+        body{
+            margin-left:25px;
+        }
+        .container {
+            border: 3px solid #F6F8F9;
+            width:1300px;
+        }
+
+        .bar {
+            width: 15px;
+            height: 3px;
+            background-color: #aaa;
+            margin: 3px 5px;
+            display: block;
+            position: relative;
+            top: 25px;
+            right: 10px;
+            left: 15px;
+        }
+
+        .content {
+            padding: 7px;
+            background-color: #F6F8F9;
+        }
+
+
+        .column {
+            float: left;
+            width: 50%;
+           
+        }
+
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        .fa {
+            padding: 2em;
+        }
+
+        .avatar {
+            
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position:relative;
+            left:500px;
+            top:15px;
+        }
+
+        h6 {
+            float: right;
+            margin-bottom: 30px;
+            position: relative;
+            left:420px;
+            margin-left: 60px;
+        }
+
+        
+        .header {
+       
+            background: white;
+            font-size: 30px;
+            width:850px;
+            height:40%;
+       
+        }
+
+        i {
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-bottom: 40px;
+            margin-right: -70px;
+        }
+
+        .m3 {
+            border: 1px solid lightblue;
+            width: 100px;
+            float: left;
+        }
+
+        #model1 {
+            position: relative;
+            left:550px;
+            top:15px;
+        }
+
+       
+
+       
+        .model4{
+            position: relative;
+            top: 5px;
+           
+            left: 40px;
+        }
+        #model5{
+            position: relative;
+            left:1090px;
+            top:80px;
+           
+        }
+        #model6{
+            position: relative;
+            top:120px;
+            left:45px;
+        }
+     
+        #m1{
+            
+            transform: rotate(270deg);
+        
+            position: relative;
+            top: 18px;
+            
+            
+        }
+        
+     .column1{
+        background-color:white;
+        width:100px;
+        height:548px;
+
+     }
+     .column2{
+    background-color:#FCFCFC;
+    width:1180px;
+    height:548px;
+     }   
+    </style>
+</head>
+ <body >
+     <table class="container">
+         <tr class="header">
+             <tr class="row">
+
+
+                 <td class="column left">
+                    
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                    
+                    </td>
+                 <td class="column left">
+                         <img src="../Images/avatar.jpg" alt="Avatar" class="avatar" ><h6  style="font-size:12px">John Deo</h6>
+                         <img src="../Images/drop.png" style='font-size:24px;width:20px;height:20px;' id="model1">
+                    
+
+                    
+
+                </td>
+            </tr>
+            </tr>
+
+         <tr class="content">
+             <tr class="row">
+                 <td class="column1">
+                     <p id="m1" style="font-family:Calibri;font-size:14px;line-height:5">REQUSITION</p>
+                     <img src="../Images/form1.png" style="width:80px;height:400px; position:relative;top:30px;left:6px;">
+                 </td>
+
+                 <td class="column2">
+                     <h4 class="model4" style="font-family:Calibri;">NOTE</h4>
+                     <p style="font-size:11px;font-family:Calibri;" class="model4">Lorem ipsum dolor sit amet,consectetur adipiscing elit.Mauris mattis,tortor sit amet tempor vehicula.</p>
+                     <textarea style="width:300px; height:70px;border-radius:5px;background-color:#FCFCFC;" class="model4">  </textarea><br /><br />
+                     <h4 class="model4" style="font-family:Calibri;">REQUEST TYPE</h4>
+                     
+                     <p style="font-size:11px;font-family:Calibri;" class="model4">Lorem ipsum dolor sit amet,consectetur adipiscing elit.Mauris mattis,tortor sit amet tempor vehicula.</p><br />
+                         
+                     
+                     <td style="font-family:Calibri;line-height:2;" class="model4">
+                         <input type="radio"> SELF </td>
+                         <td style="font-family:Calibri;line-height:2;"class="model4">
+                            
+                          <input type="radio"> TEAM/DEPARTMENT/BRANCH
+                         </td> 
+                         <td style="font-family:Calibri;line-height:2;"class="model4">
+                         <input type="radio">SOMEONE ELSE</td> 
+                     
+                     <p class="m2" id="model6" style="font-family:Calibri;font-size:12px;"><b><u>SAVE DRAFT</u></b></p>
+                     <input type="button" value="Next ->" id="model5" style="border-radius:29px;color:white;background-color:#32BDD2;height:30px;width:80px;" />
+                         </td>
+                        </td>
+
+
+
+                    </tr>
+</table>
+
+           
+
+         
+
+</body >
+        </html >
+ 

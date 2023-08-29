@@ -1,0 +1,20 @@
+.dot {
+    margin-top: 4px;
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  #underline-gap {
+      text-decoration: underline;
+      text-underline-position: under;
+      text-decoration-color: #32BDD2;
+    }
+    .textfont {
+          text-align: left;
+          font: Bold 14px/16px Calibri;
+          letter-spacing: 0.9px;
+          color: #505050;
+          opacity: 1;
+      }

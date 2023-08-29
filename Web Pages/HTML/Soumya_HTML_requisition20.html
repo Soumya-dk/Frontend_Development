@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Requisition Page</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+
+
+        .container {
+            border: 3px solid lightgrey;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+
+        .row {
+            
+            background: whitesmoke;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            height: 70%;
+        }
+
+
+
+        body {
+            width: 1000px;
+            margin-left: 20px;
+        }
+
+        .bar {
+            width: 15px;
+            height: 3px;
+            background-color: #aaa;
+            margin: 3px 5px;
+            display: block;
+            position: relative;
+            top: 25px;
+            right: 10px;
+            left: 15px;
+        }
+
+        .content {
+            padding: 7px;
+            background-color: lightgray;
+        }
+
+
+        .column {
+            float: left;
+            width: 100%;
+           
+        }
+
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        .fa {
+            padding: 2em;
+        }
+
+        .avatar {
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: -300px;
+            margin-left: 260px;
+            margin-bottom: 40px;
+            margin-top: 15px;
+            float: left;
+        }
+
+        h6 {
+            float: right;
+            margin-bottom: 30px;
+            margin-right: -350px;
+            margin-left: 60px;
+        }
+
+        
+        .header {
+       
+            background: lightgray;
+            font-size: 30px;
+            width:900px;
+            height:60%;
+       
+        }
+
+        i {
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-bottom: 40px;
+            margin-right: -70px;
+        }
+
+        .m3 {
+            border: 1px solid lightblue;
+            width: 100px;
+            float: left;
+        }
+
+        #model1 {
+            position: relative;
+            top: 20px;
+            right: 30px;
+            left: 90px;
+        }
+
+        #model2 {
+            position: relative;
+            top: 5px;
+            right: 30px;
+            left: -250px;
+        }
+
+        #model3 {
+            position: relative;
+            top: 5px;
+            right: 30px;
+            left: -260px;
+        }
+        #model4{
+            position: relative;
+            top: 5px;
+            right: 40px;
+            left: 20px;
+        }
+        #model5{
+            position: relative;
+            top: -18px;
+            right: 30px;
+            left: 680px;
+        }
+        #model6{
+            position: relative;
+            top: 25px;
+            right: 30px;
+            left: 20px;
+        }
+        #mmm{
+            position: relative;
+            top: 25px;
+            right: 30px;
+            left: 35px;
+        }
+        
+        #mm{
+            
+            transform: rotate(270deg);
+        
+            position: relative;
+            top: 25px;
+            right: 30px;
+            left: -370px;
+        }
+        #m{
+            transform: rotate(270deg);
+            width:35.8px;
+            border:1px dotted black;
+            position: relative;
+            top:14px;
+            right: 30px;
+            left: -3px;
+            
+
+        }
+        .step {
+ 
+  border:1px solid black;
+  border-radius:0.5em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color:black;
+  display: inline-block;
+ 
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.5em; 
+}
+        .vertical-line{
+        display: inline-block;
+        border-left: 1px solid #ccc;
+        margin: 0 10px;
+        height: 135px; 
+        } 
+        
+        
+       
+        
+        
+    </style>
+</head>
+ <body >
+     <div class="container">
+         <div class="header">
+             <div class="row">
+
+
+                 <div class="column left">
+                     <div style="float:left">
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                     </div>
+                 </div>
+                 <div class="column left">
+                     <div style="float:right">
+                         <img src="img_avatar.png" alt="Avatar" class="avatar" id="model2"><h6 id="model3" style="font-size:12px">John Deo</h6>
+                         <i style='font-size:24px' class='fas' id="model1">&#xf107;</i>
+
+                     </div>
+
+                 </div>
+
+             </div>
+         </div>
+
+         <div class="content">
+             <div class="row">
+                 <div class="column" style="background-color:white;width:100px;">
+                     <h6 id="mm">REQUSITION</h6><br /><br /><br /><br /><br /><br />
+                     <span class="step" id="mmm">1</span>
+                     
+                     <br /><br /><hr id="m"/>
+                     <span class="step" id="mmm">2</span>
+                     
+                     <br /><br /><hr id="m"/>
+                     <span class="step" id="mmm">3</span>
+                     <br /><br /><hr id="m"/>
+                     <span class="step" id="mmm">4</span>
+                     <br /><br /><hr id="m"/>
+                     <span class="step" id="mmm">5</span>
+                     <br /><br /><hr id="m"/>
+                     <span class="step" id="mmm"style="background-color:blue">6</span>
+                 </div>
+                 <div class="column" style="background-color:whitesmoke;width:880px;">
+                     <h5 id="model4">ACKNOWLEDGEMENT</h5>
+                     <br>
+                     <p><h4 id=form>Your request has been saved as draft</h4>
+                     <br>
+                     Lorem ipsum dolar sit amet,consectur adipiscing elit. Mauris amttis, tottor sit amet<br>
+                     tempor vehicula, tortor ipsum faucibus nunc,id aliquam iacus odio nec magna. cras a ipsum<br>
+                     placerat,efficitur nibh sed, laculis elit. Manuris semper tempor facilisis.
+                     
+                     
+                 </div>
+             </div>
+
+
+
+         </div>
+     </div>
+
+           
+
+         
+
+</body >
+        </html >
+ 

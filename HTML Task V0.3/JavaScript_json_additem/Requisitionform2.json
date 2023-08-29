@@ -1,0 +1,59 @@
+{
+
+    "lists":[
+        {
+            "data":"IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5(3.3 GHz /Cache 8 MB)",
+            "type":"READ MORE",
+            "no":"01",
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        },
+        {
+            "data":"Lenovo ThinkServer TS450 (PN:70M2001VIH) With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 ",
+            "type":"READ MORE",
+            "no":"02",
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        },
+        {
+            "data":"IBM X3300M4 Server With x3300M4/ Part NO:7382IA4/ Intel Xeon E5 1230v2 1.8 GHz,10 MB,1066MHz/ 1x 8GB RAM/",
+            "type":"READ MORE",
+            "no":"01",
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        },
+        {
+            "data":"IBM Lenovo ThinkServer RD450 Rack Server (PN:70Q90059IH) with 1 x Intel® Xeon® E5-2620v4 (2.1GHz/8C/20MB/",
+            "type":"READ MORE",
+            "no":"01",
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        },
+        {
+            "data":"IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5",
+            "type":"READ MORE",
+            "no":"01",
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        },
+        {
+            "data":"daptec 128 MB Raid Controller Pair. Pci-e SAS/SATA",
+            "type":"READ MORE",
+            "no":"01",
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        }
+       ]
+}

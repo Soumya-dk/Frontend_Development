@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/ic_launcher_background"
+    android:padding="20dp">
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/profile">
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luke Ray"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lukeray@gmail.com"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+</LinearLayout>

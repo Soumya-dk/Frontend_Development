@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initialscale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid white}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+  align-self: center;
+  justify-self: center;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: none;
+  width: 20%;
+  align-self: center;
+  justify-self: center;
+ 
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+.container {
+  padding: 300px;
+  padding-top: 50px;
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+  border-radius: 25px;
+  border: 2px solid grey;
+  width: 730px;
+  height:280px;
+  box-shadow: 2px 2px 5px 5px lightgrey;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  
+}
+.button {border-radius: 8px;}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  
+}
+</style>
+</head>
+<body>
+
+
+<form>
+ 
+<div class="container">
+ 
+    
+<u><h1>Login</h1></u>
+<form>
+  <label for="Username">Email Or Username</label><br>
+  <input type="text" id="Username"  placeholder="Email Or Username"><br>
+
+  <i class="material-icons" style="font-size:15px;color:red">warning</i><label style="font-size:15px;color:red">This field is required</label>
+<br><br>
+
+<label for="Password">Password</label>
+  <br>
+  <input type="text" id="password"  placeholder="********" ><br>
+  
+  <i class="material-icons" style="font-size:15px;color:red">warning</i><label style="font-size:15px;color:red">This field is required</label>
+</label>
+<br>
+<br>
+<label>
+   <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+
+    <label for="Remember me">Remember me</label> &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+   &nbsp;
+    <a href="default.asp" target="_blank">Forgot Password</a>
+  
+   <br>
+    <div class="center">
+      <br>
+    <button class="button">Login</button>
+    </div>
+  
+  </form>
+  <p id="container"></p>
+</body>
+</html>
+

@@ -1,0 +1,39 @@
+#underline-gap {
+    text-decoration: underline;
+    text-underline-position: under;
+   }
+  .textfont {
+        text-align: left;
+        font: Bold 14px/16px Calibri;
+        font: Regular 12px/18px Gibson;
+        font: SemiBold 12px/13px Gibson;
+        letter-spacing: 0.9px;
+        color: #505050;
+        opacity: 1;
+    }
+.imagealign {
+display: block;
+margin-left: auto;
+margin-right: auto;
+} 
+.button1 {
+background-color: #32BDD2;
+border: solid;
+border-color: #32BDD2;
+border-radius: 15px;
+color: #F0F0F0;
+height: 25px;
+width: 75px;
+}
+.inputspace {
+width:160%;
+border: 1px dashed #32BDD2;
+border-radius: 15px 0px 0px 15px;
+height: 20px;
+}
+.inputspace1 {
+width:250%;
+border: 1px solid #B5B5B5;
+border-radius: 39px;
+height: 35px;
+}

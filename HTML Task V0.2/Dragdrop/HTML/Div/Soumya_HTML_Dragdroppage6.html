@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style> 
+* { 
+  box-sizing: border-box; 
+} 
+ 
+.brand:hover:not(.header){ 
+  background-color: #eee; 
+} 
+body {
+	background:whitesmoke;
+	color: black;
+	line-height: 1em;
+	font-family: Calibri;
+	padding: 4em;
+	max-width: 200px;
+	max-height:2000px;
+	height:300px;
+    margin-top:100px;
+    margin-left:259px;
+}
+        .brand {
+            background-color: white;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            
+        }
+        .container {
+	background: #fff;
+	color: #525865;
+	border-radius: 4px;
+	border: 0.5px solid #E0E0E0;
+	box-shadow: 0px 3px 10px #00000029;
+	font-family: inherit;
+	line-height:1em;
+	outline: none;
+	padding: 0.6em 1.45em 0.8em;
+	-webkit-transition: .18s ease-out;
+	-moz-transition: .18s ease-out;
+	-o-transition: .18s ease-out;
+	transition: .18s ease-out;
+}
+	.container:focus {
+		color: #b6ff00;
+		border: 1px solid gray;
+		box-shadow: inset 1px 2px 4px whitesmoke 0px 0px 8px whitesmoke;
+	}
+.container {
+	max-width: 200px;
+	max-height: 300px;
+	width: 640px;
+	height: 510px;
+	margin-left: -25px;
+	margin-right: auto;
+	border-radius: 10px;
+    margin-top:-10px;
+}
+</style> 
+</head> 
+<body> <div class="container">
+        <div>
+            
+    <button class="brand"><b>CLEAR</b></button>
+        </div>
+    <div>    
+        
+            <button class="brand" style="color:lightgray;">APPROVED</button>
+        </div>
+        
+        <div>
+        <button class="brand"><b>DRAFT</b></button>
+                
+        </div>
+        <div>
+            
+                <button class="brand"><b>AWAITING</b></button>
+             
+        </div>
+       
+            <div><button class="brand"><b>REJECTED</b></button>
+            </div>
+        
+        </div>
+</body>
+</html >   
+

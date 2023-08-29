@@ -1,0 +1,78 @@
+#underline-gap {
+    text-decoration: underline;
+    text-underline-position: under;
+  
+
+  }
+  .textfont {
+        text-align: left;
+        font: Bold 14px/16px Calibri;
+        font: Regular 12px/18px Gibson;
+        font: SemiBold 12px/13px Gibson;
+        letter-spacing: 0.9px;
+        color: #505050;
+        opacity: 1;
+    }
+    
+  #trans1{
+            position: relative;
+            top: 40%;
+            left: 20px;
+            border: 1px solid #D3D3D3;
+         
+        }
+        
+        #trans{
+            
+            transform: rotate(270deg);
+            color: #000000;
+            position: relative;
+            margin-right: 10%;
+        }
+        #trans2{
+            transform: rotate(270deg);
+            width:35.8px;
+            border:1px dotted #D3D3D3;;
+            position: relative;
+            margin-left: 8px;
+         
+         }
+        .step {
+  border:1px solid black;
+  border-radius:25px;
+  color:#D3D3D3;
+  display: inline-block;
+ line-height: 1.6em;
+  margin-right: 20px;
+  text-align: center;
+  width: 1.5em; 
+}
+.vertical-line{
+        display: inline-block;
+        border-left: 1px solid #ccc;
+        margin: 0 10px;
+        height: 125px; 
+        } 
+
+.column {
+float: left;
+width: 5%;
+padding: 12px;
+/* Should be removed. Only for demonstration */
+}
+.column1{
+float: right;
+width: 90%;
+padding: 5px;
+
+/* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.menuhide{
+  display: none;
+}
